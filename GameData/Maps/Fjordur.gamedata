@@ -1,0 +1,562 @@
+{
+  "Application": "ark",
+	"Version": "1.1.44",
+	"Created": "2023-03-15",
+  "Creatures": [    
+    {
+      "NameTag": "Andrewsarchus",
+      "IsSpawnable": true,
+      "IsTameable": "True",
+      "ClassName": "Andrewsarchus_Character_BP_C",
+      "Description": "Andrewsarchus",
+      "Mod": "Fjordur"
+    },
+    {
+      "NameTag": "Desmodus",
+      "IsSpawnable": true,
+      "IsTameable": "True",
+      "ClassName": "Desmodus_Character_BP_C",
+      "Description": "Desmodus",
+      "Mod": "Fjordur"
+    },
+    {
+      "NameTag": "Fenrir",
+      "IsSpawnable": true,
+      "IsTameable": "True",
+      "ClassName": "Fenrir_Character_BP_C",
+      "Description": "Fenrir",
+      "Mod": "Fjordur"
+    },
+    {
+      "NameTag": "Fjordhawk",
+      "IsSpawnable": true,
+      "IsTameable": "True",
+      "ClassName": "Fjordhawk_Character_BP_C",
+      "Description": "Fjordhawk",
+      "Mod": "Fjordur"
+    },
+    {
+      "NameTag": "Beyla",
+      "IsSpawnable": false,
+      "IsTameable": "False",
+      "ClassName": "Beyla_Character_BP_C",
+      "Description": "Beyla",
+      "Mod": "Fjordur"
+    },
+    {
+      "NameTag": "Beyla Minion",
+      "IsSpawnable": false,
+      "IsTameable": "False",
+      "ClassName": "BeylaMinion_Character_BP_C",
+      "Description": "Beyla Minion",
+      "Mod": "Fjordur"
+    },
+    {
+      "NameTag": "Hati",
+      "IsSpawnable": false,
+      "IsTameable": "False",
+      "ClassName": "Fenrir_Character_BP_MiniBoss_Hati_C",
+      "Description": "Hati",
+      "Mod": "Fjordur"
+    },
+    {
+      "NameTag": "Skoll",
+      "IsSpawnable": false,
+      "IsTameable": "False",
+      "ClassName": "Fenrir_Character_BP_MiniBoss_Skoll_C",
+      "Description": "Skoll",
+      "Mod": "Fjordur"
+    },
+    {
+      "NameTag": "Steinbjorn",
+      "IsSpawnable": false,
+      "IsTameable": "False",
+      "ClassName": "Steinbjorn_Character_BP_C",
+      "Description": "Steinbjorn",
+      "Mod": "Fjordur"
+    },
+    {
+      "NameTag": "Fenrir (Easy)",
+      "IsSpawnable": false,
+      "IsTameable": "False",
+      "ClassName": "Fenrir_Character_BP_Boss_Easy_C",
+      "Description": "Fenrir (Easy)",
+      "Mod": "Fjordur"
+    },
+    {
+      "NameTag": "Fenrir (Medium)",
+      "IsSpawnable": false,
+      "IsTameable": "False",
+      "ClassName": "Fenrir_Character_BP_Boss_Medium_C",
+      "Description": "Fenrir (Medium)",
+      "Mod": "Fjordur"
+    },
+    {
+      "NameTag": "Fenrir (Hard)",
+      "IsSpawnable": false,
+      "IsTameable": "False",
+      "ClassName": "Fenrir_Character_BP_Boss_Hard_C",
+      "Description": "Fenrir (Hard)",
+      "Mod": "Fjordur"
+    },
+    {
+      "NameTag": "Fenrir Minion",
+      "IsSpawnable": false,
+      "IsTameable": "False",
+      "ClassName": "Fenrir_Character_BP_Minion_C",
+      "Description": "Fenrir Minion",
+      "Mod": "Fjordur"
+    },
+    {
+      "NameTag": "Broodmother (Easy)",
+      "IsSpawnable": false,
+      "IsTameable": "False",
+      "ClassName": "SpiderL_Character_BP_Easy_FJ_C",
+      "Description": "Broodmother (Easy)",
+      "Mod": "Fjordur"
+    },
+    {
+      "NameTag": "Broodmother (Medium)",
+      "IsSpawnable": false,
+      "IsTameable": "False",
+      "ClassName": "SpiderL_Character_BP_Medium_FJ_C",
+      "Description": "Broodmother (Medium)",
+      "Mod": "Fjordur"
+    },
+    {
+      "NameTag": "Broodmother (Hard)",
+      "IsSpawnable": false,
+      "IsTameable": "False",
+      "ClassName": "SpiderL_Character_BP_Hard_FJ_C",
+      "Description": "Broodmother (Hard)",
+      "Mod": "Fjordur"
+    },
+    {
+      "NameTag": "Megapithecus (Easy)",
+      "IsSpawnable": false,
+      "IsTameable": "False",
+      "ClassName": "Gorilla_Character_BP_Easy_FJ_C",
+      "Description": "Megapithecus (Easy)",
+      "Mod": "Fjordur"
+    },
+    {
+      "NameTag": "Megapithecus (Medium)",
+      "IsSpawnable": false,
+      "IsTameable": "False",
+      "ClassName": "Gorilla_Character_BP_Medium_FJ_C",
+      "Description": "Megapithecus (Medium)",
+      "Mod": "Fjordur"
+    },
+    {
+      "NameTag": "Megapithecus (Hard)",
+      "IsSpawnable": false,
+      "IsTameable": "False",
+      "ClassName": "Gorilla_Character_BP_Hard_FJ_C",
+      "Description": "Megapithecus (Hard)",
+      "Mod": "Fjordur"
+    },
+    {
+      "NameTag": "Dragon (Easy)",
+      "IsSpawnable": false,
+      "IsTameable": "False",
+      "ClassName": "Dragon_Character_BP_Boss_Easy_FJ_C",
+      "Description": "Dragon (Easy)",
+      "Mod": "Fjordur"
+    },
+    {
+      "NameTag": "Dragon (Medium)",
+      "IsSpawnable": false,
+      "IsTameable": "False",
+      "ClassName": "Dragon_Character_BP_Boss_Medium_FJ_C",
+      "Description": "Dragon (Medium)",
+      "Mod": "Fjordur"
+    },
+    {
+      "NameTag": "Dragon (Hard)",
+      "IsSpawnable": false,
+      "IsTameable": "False",
+      "ClassName": "Dragon_Character_BP_Boss_Hard_FJ_C",
+      "Description": "Dragon (Hard)",
+      "Mod": "Fjordur"
+    }
+  ],
+  "Engrams": [
+    {
+      "Level": 74,
+      "Points": 45,
+      "IsTekGram": false,
+      "ClassName": "EngramEntry_Saddle_Andrewsarchus_C",
+      "Description": "Andrewsarchus Saddle",
+      "Mod": "Fjordur"
+    },
+    {
+      "Level": 74,
+      "Points": 45,
+      "IsTekGram": false,
+      "ClassName": "EngramEntry_Saddle_Desmodus_C",
+      "Description": "Desmodus Saddle",
+      "Mod": "Fjordur"
+    }
+  ],
+  "Items": [
+    {
+      "Category": "Andrewsarchus Saddle",
+      "IsHarvestable": false,
+      "ClassName": "PrimalItemArmor_AndrewsarchusSaddle_C",
+      "Description": "Andrewsarchus Saddle",
+      "Mod": "Fjordur"
+    },
+    {
+      "Category": "Desmodus Saddle",
+      "IsHarvestable": false,
+      "ClassName": "PrimalItemArmor_DesmodusSaddle_C",
+      "Description": "Desmodus Saddle",
+      "Mod": "Fjordur"
+    },
+    {
+      "Category": "Trophy",
+      "IsHarvestable": false,
+      "ClassName": "PrimalItemTrophy_FenrirBoss_C",
+      "Description": "Fenrir Trophy",
+      "Mod": "Fjordur"
+    },
+    {
+      "Category": "Trophy",
+      "IsHarvestable": false,
+      "ClassName": "PrimalItemTrophy_FenrirBoss_Gamma_C",
+      "Description": "Fenrir Trophy (Gamma)",
+      "Mod": "Fjordur"
+    },
+    {
+      "Category": "Trophy",
+      "IsHarvestable": false,
+      "ClassName": "PrimalItemTrophy_FenrirBoss_Beta_C",
+      "Description": "Fenrir Trophy (Beta)",
+      "Mod": "Fjordur"
+    },
+    {
+      "Category": "Trophy",
+      "IsHarvestable": false,
+      "ClassName": "PrimalItemTrophy_FenrirBoss_Alpha_C",
+      "Description": "Fenrir Trophy (Alpha)",
+      "Mod": "Fjordur"
+    }
+  ],
+  "MapSpawners": [
+	{
+		"ClassName": "AB_DinoSpawnEntries_BioCaveWater_C",
+		"Description": "AB_DinoSpawnEntries_BioCaveWater_C",
+		"Mod": "Fjordur"
+	},
+	{
+		"ClassName": "AB_DinoSpawnEntries_BioCave_C",
+		"Description": "AB_DinoSpawnEntries_BioCave_C",
+		"Mod": "Fjordur"
+	},
+	{
+		"ClassName": "AB_DinoSpawnEntries_BioLumCave_C",
+		"Description": "AB_DinoSpawnEntries_BioLumCave_C",
+		"Mod": "Fjordur"
+	},
+	{
+		"ClassName": "AB_DinoSpawnEntries_ElementalChamber_C",
+		"Description": "AB_DinoSpawnEntries_ElementalChamber_C",
+		"Mod": "Fjordur"
+	},
+	{
+		"ClassName": "AB_DinoSpawnEntries_RockDrake_C",
+		"Description": "AB_DinoSpawnEntries_RockDrake_C",
+		"Mod": "Fjordur"
+	},
+	{
+		"ClassName": "AB_DinoSpawnEntries_TwitchFertileLand_C",
+		"Description": "AB_DinoSpawnEntries_TwitchFertileLand_C",
+		"Mod": "Fjordur"
+	},
+	{
+		"ClassName": "DinoSpawnEntriesArcha_C",
+		"Description": "DinoSpawnEntriesArcha_C",
+		"Mod": "Fjordur"
+	},
+	{
+		"ClassName": "DinoSpawnEntriesBeach_C",
+		"Description": "DinoSpawnEntriesBeach_C",
+		"Mod": "Fjordur"
+	},
+	{
+		"ClassName": "DinoSpawnEntriesCave1_C",
+		"Description": "DinoSpawnEntriesCave1_C",
+		"Mod": "Fjordur"
+	},
+	{
+		"ClassName": "DinoSpawnEntriesCave5_C",
+		"Description": "DinoSpawnEntriesCave5_C",
+		"Mod": "Fjordur"
+	},
+	{
+		"ClassName": "DinoSpawnEntriesCave5_Tough_C",
+		"Description": "DinoSpawnEntriesCave5_Tough_C",
+		"Mod": "Fjordur"
+	},
+	{
+		"ClassName": "DinoSpawnEntriesCaveIceWater_C",
+		"Description": "DinoSpawnEntriesCaveIceWater_C",
+		"Mod": "Fjordur"
+	},
+	{
+		"ClassName": "DinoSpawnEntriesGardensMountain_Gen2_C",
+		"Description": "DinoSpawnEntriesGardensMountain_Gen2_C",
+		"Mod": "Fjordur"
+	},
+	{
+		"ClassName": "DinoSpawnEntriesGardens_RiversLand_Gen2_C",
+		"Description": "DinoSpawnEntriesGardens_RiversLand_Gen2_C",
+		"Mod": "Fjordur"
+	},
+	{
+		"ClassName": "DinoSpawnEntriesGrassland_C",
+		"Description": "DinoSpawnEntriesGrassland_C",
+		"Mod": "Fjordur"
+	},
+	{
+		"ClassName": "DinoSpawnEntriesIceCave_C	",
+		"Description": "DinoSpawnEntriesIceCave_C",
+		"Mod": "Fjordur"
+	},
+	{
+		"ClassName": "DinoSpawnEntriesJungle_C",
+		"Description": "DinoSpawnEntriesJungle_C",
+		"Mod": "Fjordur"
+	},
+	{
+		"ClassName": "DinoSpawnEntriesMountain_C",
+		"Description": "DinoSpawnEntriesMountain_C",
+		"Mod": "Fjordur"
+	},
+	{
+		"ClassName": "DinoSpawnEntriesMountain_Easy_Gen2_C",
+		"Description": "DinoSpawnEntriesMountain_Easy_Gen2_C",
+		"Mod": "Fjordur"
+	},
+	{
+		"ClassName": "DinoSpawnEntriesMountain_Hard_Gen2_C",
+		"Description": "DinoSpawnEntriesMountain_Hard_Gen2_C",
+		"Mod": "Fjordur"
+	},
+	{
+		"ClassName": "DinoSpawnEntriesOceanWaterDeep_Gen2_C",
+		"Description": "DinoSpawnEntriesOceanWaterDeep_Gen2_C",
+		"Mod": "Fjordur"
+	},
+	{
+		"ClassName": "DinoSpawnEntriesRedwoodCave_C",
+		"Description": "DinoSpawnEntriesRedwoodCave_C",
+		"Mod": "Fjordur"
+	},
+	{
+		"ClassName": "DinoSpawnEntriesRedwoods_C",
+		"Description": "DinoSpawnEntriesRedwoods_C",
+		"Mod": "Fjordur"
+	},
+	{
+		"ClassName": "DinoSpawnEntriesSnow_C",
+		"Description": "DinoSpawnEntriesSnow_C",
+		"Mod": "Fjordur"
+	},
+	{
+		"ClassName": "DinoSpawnEntriesSwampCave_C",
+		"Description": "DinoSpawnEntriesSwampCave_C",
+		"Mod": "Fjordur"
+	},
+	{
+		"ClassName": "DinoSpawnEntriesSwamp_C",
+		"Description": "DinoSpawnEntriesSwamp_C",
+		"Mod": "Fjordur"
+	},
+	{
+		"ClassName": "DinoSpawnEntriesUnicorn_C",
+		"Description": "DinoSpawnEntriesUnicorn_C",
+		"Mod": "Fjordur"
+	},
+	{
+		"ClassName": "DinoSpawnEntriesWaterSpillways_Aquatic_C",
+		"Description": "DinoSpawnEntriesWaterSpillways_Aquatic_C",
+		"Mod": "Fjordur"
+	},
+	{
+		"ClassName": "DinoSpawnEntries_DarkWaterAngler_C",
+		"Description": "DinoSpawnEntries_DarkWaterAngler_C",
+		"Mod": "Fjordur"
+	},
+	{
+		"ClassName": "DinoSpawnEntries_DeepWater_C",
+		"Description": "DinoSpawnEntries_DeepWater_C",
+		"Mod": "Fjordur"
+	},
+	{
+		"ClassName": "DinoSpawnEntries_FallBiomeCave_C",
+		"Description": "DinoSpawnEntries_FallBiomeCave_C",
+		"Mod": "Fjordur"
+	},
+	{
+		"ClassName": "DinoSpawnEntries_FjordurRedwoodWater_C",
+		"Description": "DinoSpawnEntries_FjordurRedwoodWater_C",
+		"Mod": "Fjordur"
+	},
+	{
+		"ClassName": "DinoSpawnEntries_InlandWater_C",
+		"Description": "DinoSpawnEntries_InlandWater_C",
+		"Mod": "Fjordur"
+	},
+	{
+		"ClassName": "DinoSpawnEntries_OceanCaveHard_C",
+		"Description": "DinoSpawnEntries_OceanCaveHard_C",
+		"Mod": "Fjordur"
+	},
+	{
+		"ClassName": "DinoSpawnEntries_Ocean_C",
+		"Description": "DinoSpawnEntries_Ocean_C",
+		"Mod": "Fjordur"
+	},
+	{
+		"ClassName": "DinoSpawnEntries_ShallowWater_C",
+		"Description": "DinoSpawnEntries_ShallowWater_C",
+		"Mod": "Fjordur"
+	},
+	{
+		"ClassName": "Ext_DinoSpawnEntriesSnow_C",
+		"Description": "Ext_DinoSpawnEntriesSnow_C",
+		"Mod": "Fjordur"
+	},
+	{
+		"ClassName": "Fjo_AB_DinoSpawnEntries_F6_BioCave_C",
+		"Description": "Fjo_AB_DinoSpawnEntries_F6_BioCave_C",
+		"Mod": "Fjordur"
+	},
+	{
+		"ClassName": "Fjo_DinoSpawnEntries_Fornland_C",
+		"Description": "Fjo_DinoSpawnEntries_Fornland_C",
+		"Mod": "Fjordur"
+	},
+	{
+		"ClassName": "Fjo_Gen1_Bog_Springs_DinoSpawnEntries_C",
+		"Description": "Fjo_Gen1_Bog_Springs_DinoSpawnEntries_C",
+		"Mod": "Fjordur"
+	},
+	{
+		"ClassName": "Fjordur_DinoSpawnEntriesWyvernTrench_C",
+		"Description": "Fjordur_DinoSpawnEntriesWyvernTrench_C",
+		"Mod": "Fjordur"
+	},
+	{
+		"ClassName": "Fjordur_DinoSpawnEntries_Moria_C",
+		"Description": "Fjordur_DinoSpawnEntries_Moria_C",
+		"Mod": "Fjordur"
+	},
+	{
+		"ClassName": "Fjordur_DinoSpawnEntries_RedwoodWater_C",
+		"Description": "Fjordur_DinoSpawnEntries_RedwoodWater_C",
+		"Mod": "Fjordur"
+	},
+	{
+		"ClassName": "Fjordur_DinoSpawnEntries_SwampWater_C",
+		"Description": "Fjordur_DinoSpawnEntries_SwampWater_C",
+		"Mod": "Fjordur"
+	},
+	{
+		"ClassName": "Fjordur_Volcano_DinoSpawnEntries_C",
+		"Description": "Fjordur_Volcano_DinoSpawnEntries_C",
+		"Mod": "Fjordur"
+	},
+	{
+		"ClassName": "Gen1_Arctic_Cave_DinoSpawnEntries_C",
+		"Description": "Gen1_Arctic_Cave_DinoSpawnEntries_C",
+		"Mod": "Fjordur"
+	},
+	{
+		"ClassName": "Gen1_Arctic_Forest_DinoSpawnEntries_C",
+		"Description": "Gen1_Arctic_Forest_DinoSpawnEntries_C",
+		"Mod": "Fjordur"
+	},
+	{
+		"ClassName": "Gen1_Arctic_Forest_Nice_DinoSpawnEntries_C",
+		"Description": "Gen1_Arctic_Forest_Nice_DinoSpawnEntries_C",
+		"Mod": "Fjordur"
+	},
+	{
+		"ClassName": "Gen1_Bog_Forest_DinoSpawnEntries_C",
+		"Description": "Gen1_Bog_Forest_DinoSpawnEntries_C",
+		"Mod": "Fjordur"
+	},
+	{
+		"ClassName": "Gen1_Bog_Water_DinoSpawnEntries_C",
+		"Description": "Gen1_Bog_Water_DinoSpawnEntries_C",
+		"Mod": "Fjordur"
+	},
+	{
+		"ClassName": "Gen1_OceanDeep_DinoSpawnEntries_C",
+		"Description": "Gen1_OceanDeep_DinoSpawnEntries_C",
+		"Mod": "Fjordur"
+	},
+	{
+		"ClassName": "Gen1_OceanLargerDinos_DinoSpawnEntries_C",
+		"Description": "Gen1_OceanLargerDinos_DinoSpawnEntries_C",
+		"Mod": "Fjordur"
+	},
+	{
+		"ClassName": "Gen1_Volcano_Cave_DinoSpawnEntries_C",
+		"Description": "Gen1_Volcano_Cave_DinoSpawnEntries_C",
+		"Mod": "Fjordur"
+	},
+	{
+		"ClassName": "SE_DinoSpawnEntriesWyvernTrench_C",
+		"Description": "SE_DinoSpawnEntriesWyvernTrench_C",
+		"Mod": "Fjordur"
+	}
+  ],
+  "Inventories": [
+    {
+      "ClassName": "DinoDropInventoryComponent_Beyla_C",
+      "Description": "MiniBoss Inventory - Beyla",
+      "Mod": "Fjordur"
+    },
+    {
+      "ClassName": "DinoDropInventoryComponent_Hati_C",
+      "Description": "MiniBoss Inventory - Hati",
+      "Mod": "Fjordur"
+    },
+    {
+      "ClassName": "DinoDropInventoryComponent_Skoll_C",
+      "Description": "MiniBoss Inventory - Skoll",
+      "Mod": "Fjordur"
+    },
+    {
+      "ClassName": "DinoDropInventoryComponent_Steinbjorn_C",
+      "Description": "MiniBoss Inventory - Steinbjorn",
+      "Mod": "Fjordur"
+    },
+    {
+      "ClassName": "DinoDropInventoryComponent_FenrirBoss_Easy_C",
+      "Description": "Boss Inventory - Fenrir (Gamma)",
+      "Mod": "Fjordur"
+    },
+    {
+      "ClassName": "DinoDropInventoryComponent_FenrirBoss_Medium_C",
+      "Description": "Boss Inventory - Fenrir (Beta)",
+      "Mod": "Fjordur"
+    },
+    {
+      "ClassName": "DinoDropInventoryComponent_FenrirBoss_Hard_C",
+      "Description": "Boss Inventory - Fenrir (Alpha)",
+      "Mod": "Fjordur"
+    }
+  ],
+  "GameMaps": [
+	{
+      "IsSotF": false,
+      "ClassName": "Fjordur",
+      "Description": "Fjordur",
+      "Mod": "Fjordur"
+	}
+  ]
+}
