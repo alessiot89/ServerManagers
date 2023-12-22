@@ -1233,16 +1233,6 @@
     <sys:String x:Key="ServerSettings_UseCacheTooltip">Если включено, ~ 70% более быстрая скорость загрузки. Первый и второй раз, когда вы начинаете игру, будут все еще медленными, но в третий раз вперед будет быстро.</sys:String>
     <sys:String x:Key="ServerSettings_UseOldSaveFormatLabel">Использовать старый формат Сохранения</sys:String>
     <sys:String x:Key="ServerSettings_UseOldSaveFormatTooltip">Если включено, будет использоваться старый формат сохранения. Новые сохранения не сохраняются в старый формат.</sys:String>
-    <sys:String x:Key="ServerSettings_ForceDirectX10Label">Использовать DirectX 10</sys:String>
-    <sys:String x:Key="ServerSettings_ForceDirectX10Tooltip">Если включено, игра вынуждена использовать DirectX 10 вместо DirectX 11.</sys:String>
-    <sys:String x:Key="ServerSettings_ForceShaderModel4Label">Использовать Shader Model 4</sys:String>
-    <sys:String x:Key="ServerSettings_ForceShaderModel4Tooltip">Если включено, игра вынуждена использовать Shader Model 4 вместо Shader Model 5.</sys:String>
-    <sys:String x:Key="ServerSettings_ForceLowMemoryLabel">Использовать Low Memory</sys:String>
-    <sys:String x:Key="ServerSettings_ForceLowMemoryTooltip">Если включено, уменьшает графические и звуковые эффекты, чтобы сэкономить около 800 МБ ОЗУ, что, вероятно, позволит игрокам 4 ГБ RAM пройти мимо экранов с бесконечной загрузкой.</sys:String>
-    <sys:String x:Key="ServerSettings_ForceNoManSkyLabel">Использовать No Man Sky</sys:String>
-    <sys:String x:Key="ServerSettings_ForceNoManSkyTooltip">Если включено, многие детали неба недоступны, например, облака и звездное ночное небо. Вы все еще видите звезды, солнце и луну.</sys:String>
-    <sys:String x:Key="ServerSettings_UseNoMemoryBiasLabel">Использовать No Memory Bias</sys:String>
-    <sys:String x:Key="ServerSettings_UseNoMemoryBiasTooltip">Если включено, будет использоваться старый метод, больше использования ОЗУ, но нет потенциальной потери производительности.</sys:String>
     <sys:String x:Key="ServerSettings_StasisKeepControllersLabel">Stasis Keep Controllers</sys:String>
     <sys:String x:Key="ServerSettings_StasisKeepControllersTooltip">Если это разрешено, сервер может получить производительность, сохранив AI в памяти о статусных существах. ПРИМЕЧАНИЕ: На вашем сервере должно быть много ОЗУ, иначе ваш сервер будет страдать с большими издержками памяти.</sys:String>
     <sys:String x:Key="ServerSettings_UseNoHangDetectionLabel">Нет Hang Detection</sys:String>

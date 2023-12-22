@@ -9,8 +9,8 @@
 
     <entry>
         <id>urn:uuid:95ae6989-2ad9-4a62-b2d8-65b9c891cd9f</id>
-        <title>2.1.445 (2.1.445.1)</title>
-        <summary>2.1.445.1</summary>
+        <title>2.1.445 (2.1.445.3)</title>
+        <summary>2.1.445.3</summary>
         <link href="" />
         <updated>2023-12-22T17:00:00Z</updated>
         <content type="xhtml">
@@ -20,6 +20,7 @@
                     <br/>
                     <ul>
                         <li>Allow exclusive join list write when server is running</li>
+                        <li>Removed client-onli legacy mode startup options</li>
                     </ul>
                 </p>
             </div>

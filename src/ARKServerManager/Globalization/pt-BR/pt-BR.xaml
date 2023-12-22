@@ -1233,16 +1233,6 @@
     <sys:String x:Key="ServerSettings_UseCacheTooltip">Se ativado, opção de velocidade de carregamento de 70% mais rápida. A primeira e segunda vez que você iniciar o jogo ainda será lenta, mas a terceira vez em diante será rápida.</sys:String>
     <sys:String x:Key="ServerSettings_UseOldSaveFormatLabel">Use o formato Salvar Antigo</sys:String>
     <sys:String x:Key="ServerSettings_UseOldSaveFormatTooltip">Se ativado, usará o antigo formato de salvamento. Novos salvamentos não são compatíveis com versões anteriores.</sys:String>
-    <sys:String x:Key="ServerSettings_ForceDirectX10Label">Força o DirectX 10</sys:String>
-    <sys:String x:Key="ServerSettings_ForceDirectX10Tooltip">Se ativado, o jogo é forçado a usar o DirectX 10 em vez do DirectX 11.</sys:String>
-    <sys:String x:Key="ServerSettings_ForceShaderModel4Label">Força Shader Model 4</sys:String>
-    <sys:String x:Key="ServerSettings_ForceShaderModel4Tooltip">Se ativado, o jogo é forçado a usar o Shader Model 4 em vez do Shader Model 5.</sys:String>
-    <sys:String x:Key="ServerSettings_ForceLowMemoryLabel">Forçar pouca memória</sys:String>
-    <sys:String x:Key="ServerSettings_ForceLowMemoryTooltip">Se ativado, reduz os efeitos gráficos e de áudio para economizar cerca de 800 MB de RAM, o que permite que os players de 4 GB de RAM passem por telas de carregamento infinito.</sys:String>
-    <sys:String x:Key="ServerSettings_ForceNoManSkyLabel">Força No Man Sky</sys:String>
-    <sys:String x:Key="ServerSettings_ForceNoManSkyTooltip">Se ativado, muitos dos recursos detalhados do céu são desativados, como nuvens e céu noturno estrelado. Você ainda vê as estrelas, o sol e a lua.</sys:String>
-    <sys:String x:Key="ServerSettings_UseNoMemoryBiasLabel">Usa No Memory Bias</sys:String>
-    <sys:String x:Key="ServerSettings_UseNoMemoryBiasTooltip">Se ativado, usará o método antigo, mais uso de RAM, mas sem perda potencial de desempenho.</sys:String>
     <sys:String x:Key="ServerSettings_StasisKeepControllersLabel">Stasis Keep Controllers</sys:String>
     <sys:String x:Key="ServerSettings_StasisKeepControllersTooltip">Se habilitado, o servidor pode ganhar desempenho mantendo os AIs na memória de criaturas estatizadas. OBSERVAÇÃO: seu servidor deve ter muita memória RAM, caso contrário seu servidor sofrerá com uma grande sobrecarga de memória.</sys:String>
     <sys:String x:Key="ServerSettings_UseNoHangDetectionLabel">No Hang Detection</sys:String>

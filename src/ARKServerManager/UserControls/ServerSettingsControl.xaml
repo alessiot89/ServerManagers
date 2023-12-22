@@ -32,7 +32,7 @@
             <vm:PlayerLevelIndexToDisplayLevelConverter x:Key="PlayerLevelIndexToDisplayLevelConverter" />
             <vm:ResourceNameValueConverter x:Key="ResourceNameValueConverter" />
             <vm:TributeExpirationConverter x:Key="TributeExpirationConverter"/>
-            
+
             <cc:FlagsEnumToBooleanConverter x:Key="FlagsEnumToBooleanConverterShutdown1"/>
             <cc:FlagsEnumToBooleanConverter x:Key="FlagsEnumToBooleanConverterShutdown2"/>
 
@@ -1143,16 +1143,11 @@
 
                                         <cctl:CheckBoxAndTextBlock Grid.Row="5" Grid.Column="2" Margin="5,5,5,0" Grid.ColumnSpan="2" IsChecked="{Binding DisableAntiSpeedHackDetection, Mode=TwoWay}" Text="{DynamicResource ServerSettings_DisableAntiSpeedHackLabel}" VerticalAlignment="Center" HorizontalAlignment="Left" ToolTip="{DynamicResource ServerSettings_DisableAntiSpeedHackTooltip}"/>
                                         <cctl:AnnotatedSlider Grid.Row="6" Grid.Column="2" Margin="20,1,5,1" Grid.ColumnSpan="2" Label="{DynamicResource ServerSettings_AntiSpeedHackBiasLabel}" Value="{Binding SpeedHackBias}" Suffix="{DynamicResource ServerSettings_AntiSpeedHackBiasUnits}" Minimum="0.0" Maximum="1.0" SmallChange="0.1" LargeChange="0.25" TickFrequency="60" LabelRelativeWidth="Auto" SliderRelativeWidth="15*" SuffixRelativeWidth="Auto" ToolTip="{DynamicResource ServerSettings_AntiSpeedHackBiasTooltip}" />
-                                        <cctl:CheckBoxAndTextBlock Grid.Row="7" Grid.Column="2" Margin="5,5,5,0" Grid.ColumnSpan="2" IsChecked="{Binding ForceDirectX10, Mode=TwoWay}" Text="{DynamicResource ServerSettings_ForceDirectX10Label}" VerticalAlignment="Center" HorizontalAlignment="Left" ToolTip="{DynamicResource ServerSettings_ForceDirectX10Tooltip}"/>
-                                        <cctl:CheckBoxAndTextBlock Grid.Row="8" Grid.Column="2" Margin="5,5,5,0" Grid.ColumnSpan="2" IsChecked="{Binding ForceShaderModel4, Mode=TwoWay}" Text="{DynamicResource ServerSettings_ForceShaderModel4Label}" VerticalAlignment="Center" HorizontalAlignment="Left" ToolTip="{DynamicResource ServerSettings_ForceShaderModel4Tooltip}"/>
-                                        <cctl:CheckBoxAndTextBlock Grid.Row="9" Grid.Column="2" Margin="5,5,5,0" Grid.ColumnSpan="2" IsChecked="{Binding ForceLowMemory, Mode=TwoWay}" Text="{DynamicResource ServerSettings_ForceLowMemoryLabel}" VerticalAlignment="Center" HorizontalAlignment="Left" ToolTip="{DynamicResource ServerSettings_ForceLowMemoryTooltip}"/>
-                                        <cctl:CheckBoxAndTextBlock Grid.Row="10" Grid.Column="2" Margin="5,5,5,0" Grid.ColumnSpan="2" IsChecked="{Binding ForceNoManSky, Mode=TwoWay}" Text="{DynamicResource ServerSettings_ForceNoManSkyLabel}" VerticalAlignment="Center" HorizontalAlignment="Left" ToolTip="{DynamicResource ServerSettings_ForceNoManSkyTooltip}"/>
-                                        <cctl:CheckBoxAndTextBlock Grid.Row="11" Grid.Column="2" Margin="5,5,5,0" Grid.ColumnSpan="2" IsChecked="{Binding UseNoMemoryBias, Mode=TwoWay}" Text="{DynamicResource ServerSettings_UseNoMemoryBiasLabel}" VerticalAlignment="Center" HorizontalAlignment="Left" ToolTip="{DynamicResource ServerSettings_UseNoMemoryBiasTooltip}"/>
-                                        <cctl:CheckBoxAndTextBlock Grid.Row="12" Grid.Column="2" Margin="5,5,5,0" Grid.ColumnSpan="2" IsChecked="{Binding StasisKeepControllers, Mode=TwoWay}" Text="{DynamicResource ServerSettings_StasisKeepControllersLabel}" VerticalAlignment="Center" HorizontalAlignment="Left" ToolTip="{DynamicResource ServerSettings_StasisKeepControllersTooltip}"/>
-                                        <cctl:CheckBoxAndTextBlock Grid.Row="13" Grid.Column="2" Margin="5,5,5,0" Grid.ColumnSpan="2" IsChecked="{Binding ServerAllowAnsel, Mode=TwoWay}" Text="{DynamicResource ServerSettings_ServerAllowAnselLabel}" VerticalAlignment="Center" HorizontalAlignment="Left" ToolTip="{DynamicResource ServerSettings_ServerAllowAnselTooltip}"/>
-                                        <cctl:CheckBoxAndTextBlock Grid.Row="14" Grid.Column="2" Margin="5,5,5,0" Grid.ColumnSpan="2" IsChecked="{Binding StructureMemoryOptimizations, Mode=TwoWay}" Text="{DynamicResource ServerSettings_StructureMemoryOptimizationsLabel}" VerticalAlignment="Center" HorizontalAlignment="Left" ToolTip="{DynamicResource ServerSettings_StructureMemoryOptimizationsTooltip}"/>
-                                        <cctl:CheckBoxAndTextBlock Grid.Row="15" Grid.Column="2" Margin="5,5,5,0" Grid.ColumnSpan="2" IsChecked="{Binding UseStructureStasisGrid, Mode=TwoWay}" Text="{DynamicResource ServerSettings_UseStructureStasisGridLabel}" VerticalAlignment="Center" HorizontalAlignment="Left" ToolTip="{DynamicResource ServerSettings_UseStructureStasisGridTooltip}"/>
-                                        <cctl:CheckBoxAndTextBlock Grid.Row="16" Grid.Column="2" Margin="5,5,5,0" IsChecked="{Binding Crossplay, Mode=TwoWay}" Text="{DynamicResource ServerSettings_CrossplayLabel}" VerticalAlignment="Center" HorizontalAlignment="Left" ToolTip="{DynamicResource ServerSettings_CrossplayTooltip}">
+                                        <cctl:CheckBoxAndTextBlock Grid.Row="7" Grid.Column="2" Margin="5,5,5,0" Grid.ColumnSpan="2" IsChecked="{Binding StasisKeepControllers, Mode=TwoWay}" Text="{DynamicResource ServerSettings_StasisKeepControllersLabel}" VerticalAlignment="Center" HorizontalAlignment="Left" ToolTip="{DynamicResource ServerSettings_StasisKeepControllersTooltip}"/>
+                                        <cctl:CheckBoxAndTextBlock Grid.Row="8" Grid.Column="2" Margin="5,5,5,0" Grid.ColumnSpan="2" IsChecked="{Binding ServerAllowAnsel, Mode=TwoWay}" Text="{DynamicResource ServerSettings_ServerAllowAnselLabel}" VerticalAlignment="Center" HorizontalAlignment="Left" ToolTip="{DynamicResource ServerSettings_ServerAllowAnselTooltip}"/>
+                                        <cctl:CheckBoxAndTextBlock Grid.Row="9" Grid.Column="2" Margin="5,5,5,0" Grid.ColumnSpan="2" IsChecked="{Binding StructureMemoryOptimizations, Mode=TwoWay}" Text="{DynamicResource ServerSettings_StructureMemoryOptimizationsLabel}" VerticalAlignment="Center" HorizontalAlignment="Left" ToolTip="{DynamicResource ServerSettings_StructureMemoryOptimizationsTooltip}"/>
+                                        <cctl:CheckBoxAndTextBlock Grid.Row="10" Grid.Column="2" Margin="5,5,5,0" Grid.ColumnSpan="2" IsChecked="{Binding UseStructureStasisGrid, Mode=TwoWay}" Text="{DynamicResource ServerSettings_UseStructureStasisGridLabel}" VerticalAlignment="Center" HorizontalAlignment="Left" ToolTip="{DynamicResource ServerSettings_UseStructureStasisGridTooltip}"/>
+                                        <cctl:CheckBoxAndTextBlock Grid.Row="11" Grid.Column="2" Margin="5,5,5,0" IsChecked="{Binding Crossplay, Mode=TwoWay}" Text="{DynamicResource ServerSettings_CrossplayLabel}" VerticalAlignment="Center" HorizontalAlignment="Left" ToolTip="{DynamicResource ServerSettings_CrossplayTooltip}">
                                             <cctl:CheckBoxAndTextBlock.Style>
                                                 <Style TargetType="{x:Type cctl:CheckBoxAndTextBlock}">
                                                     <Style.Triggers>
@@ -1184,7 +1179,7 @@
                                                 </Style>
                                             </cctl:CheckBoxAndTextBlock.Style>
                                         </cctl:CheckBoxAndTextBlock>
-                                        <cctl:CheckBoxAndTextBlock Grid.Row="16" Grid.Column="3" Margin="5,5,5,0" IsChecked="{Binding EnablePublicIPForEpic, Mode=TwoWay}" Text="{DynamicResource ServerSettings_EnablePublicIPForEpicLabel}" VerticalAlignment="Center" HorizontalAlignment="Left" ToolTip="{DynamicResource ServerSettings_EnablePublicIPForEpicTooltip}">
+                                        <cctl:CheckBoxAndTextBlock Grid.Row="11" Grid.Column="3" Margin="5,5,5,0" IsChecked="{Binding EnablePublicIPForEpic, Mode=TwoWay}" Text="{DynamicResource ServerSettings_EnablePublicIPForEpicLabel}" VerticalAlignment="Center" HorizontalAlignment="Left" ToolTip="{DynamicResource ServerSettings_EnablePublicIPForEpicTooltip}">
                                             <cctl:CheckBoxAndTextBlock.Style>
                                                 <Style TargetType="{x:Type cctl:CheckBoxAndTextBlock}">
                                                     <Setter Property="IsEnabled" Value="False"/>
@@ -1239,7 +1234,7 @@
                                                 </Style>
                                             </cctl:CheckBoxAndTextBlock.Style>
                                         </cctl:CheckBoxAndTextBlock>
-                                        <cctl:CheckBoxAndTextBlock Grid.Row="17" Grid.Column="2" Margin="5,5,5,0" IsChecked="{Binding EpicOnly, Mode=TwoWay}" Text="{DynamicResource ServerSettings_EpicOnlyLabel}" VerticalAlignment="Center" HorizontalAlignment="Left" ToolTip="{DynamicResource ServerSettings_EpicOnlyTooltip}">
+                                        <cctl:CheckBoxAndTextBlock Grid.Row="12" Grid.Column="2" Margin="5,5,5,0" IsChecked="{Binding EpicOnly, Mode=TwoWay}" Text="{DynamicResource ServerSettings_EpicOnlyLabel}" VerticalAlignment="Center" HorizontalAlignment="Left" ToolTip="{DynamicResource ServerSettings_EpicOnlyTooltip}">
                                             <cctl:CheckBoxAndTextBlock.Style>
                                                 <Style TargetType="{x:Type cctl:CheckBoxAndTextBlock}">
                                                     <Style.Triggers>
@@ -2762,8 +2757,10 @@
                                             <Grid.RowDefinitions>
                                                 <RowDefinition/>
                                                 <RowDefinition Height="{Binding Config.DinoSettingsGridHeight, ElementName=SettingsControl, FallbackValue=400, Mode=TwoWay}" MinHeight="200"/>
-                                                <RowDefinition Height="Auto"/> <!--Splitter Row-->
-                                                <RowDefinition Height="1" MinHeight="1"/> <!--Empty Row for Last Splitter-->
+                                                <RowDefinition Height="Auto"/>
+                                                <!--Splitter Row-->
+                                                <RowDefinition Height="1" MinHeight="1"/>
+                                                <!--Empty Row for Last Splitter-->
                                             </Grid.RowDefinitions>
 
                                             <StackPanel Grid.Row="0" Orientation="Horizontal" DataContext="{Binding}" Margin="0,2,0,0">
@@ -3413,8 +3410,10 @@
                                             <Grid.RowDefinitions>
                                                 <RowDefinition/>
                                                 <RowDefinition Height="{Binding Config.EnvironmentListBoxHeight, ElementName=SettingsControl, FallbackValue=400, Mode=TwoWay}" MinHeight="200"/>
-                                                <RowDefinition Height="Auto"/> <!--Splitter Row-->
-                                                <RowDefinition Height="1" MinHeight="1"/> <!--Empty Row for Last Splitter-->
+                                                <RowDefinition Height="Auto"/>
+                                                <!--Splitter Row-->
+                                                <RowDefinition Height="1" MinHeight="1"/>
+                                                <!--Empty Row for Last Splitter-->
                                             </Grid.RowDefinitions>
 
                                             <StackPanel Grid.Row="0" Orientation="Horizontal" DataContext="{Binding}" Margin="0,2,0,0">
@@ -3697,8 +3696,10 @@
                                 <Grid.RowDefinitions>
                                     <RowDefinition/>
                                     <RowDefinition Height="{Binding Config.EngramsGridHeight, ElementName=SettingsControl, FallbackValue=400, Mode=TwoWay}" MinHeight="200"/>
-                                    <RowDefinition Height="Auto"/> <!--Splitter Row-->
-                                    <RowDefinition Height="1" MinHeight="1"/> <!--Empty Row for Last Splitter-->
+                                    <RowDefinition Height="Auto"/>
+                                    <!--Splitter Row-->
+                                    <RowDefinition Height="1" MinHeight="1"/>
+                                    <!--Empty Row for Last Splitter-->
                                 </Grid.RowDefinitions>
 
                                 <cctl:CheckBoxAndTextBlock Grid.Row="0" Margin="5" Text="{DynamicResource ServerSettings_AutoUnlockAllEngramsLabel}" IsChecked="{Binding AutoUnlockAllEngrams, Mode=TwoWay}" ToolTip="{DynamicResource ServerSettings_AutoUnlockAllEngramsTooltip}" HorizontalAlignment="Left"/>
@@ -3821,7 +3822,7 @@
                                                     </DataGridTemplateColumn.CellTemplate>
                                                 </DataGridTemplateColumn>
 
-                                                
+
                                                 <DataGridTextColumn     Binding="{Binding DisplayName}" ElementStyle="{StaticResource CenteredTextBlockStyle}" IsReadOnly="True" SortMemberPath="NameSort" MinWidth="200">
                                                     <DataGridTextColumn.Header>
                                                         <TextBlock Text="{DynamicResource ServerSettings_EngramsNameColumnLabel}" ToolTip="{DynamicResource ServerSettings_EngramsNameColumnTooltip}" HorizontalAlignment="Left"/>
@@ -4066,8 +4067,10 @@
                                 <Grid.RowDefinitions>
                                     <RowDefinition Height="Auto"/>
                                     <RowDefinition Height="{Binding Config.ServerFilesGridHeight, ElementName=SettingsControl, FallbackValue=250, Mode=TwoWay}" MinHeight="200"/>
-                                    <RowDefinition Height="Auto"/> <!--Splitter Row-->
-                                    <RowDefinition Height="1" MinHeight="1"/> <!--Empty Row for Last Splitter-->
+                                    <RowDefinition Height="Auto"/>
+                                    <!--Splitter Row-->
+                                    <RowDefinition Height="1" MinHeight="1"/>
+                                    <!--Empty Row for Last Splitter-->
                                 </Grid.RowDefinitions>
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition Width="1*"/>
@@ -4369,12 +4372,15 @@
                             <Grid Margin="-8,0,2,0">
                                 <Grid.RowDefinitions>
                                     <RowDefinition Height="{Binding Config.CustomGameUserSettingsGridHeight, ElementName=SettingsControl, FallbackValue=400, Mode=TwoWay}" MinHeight="200"/>
-                                    <RowDefinition Height="Auto"/> <!--Splitter Row-->
-                                    <RowDefinition Height="1" MinHeight="1"/> <!--Empty Row for Last Splitter-->
+                                    <RowDefinition Height="Auto"/>
+                                    <!--Splitter Row-->
+                                    <RowDefinition Height="1" MinHeight="1"/>
+                                    <!--Empty Row for Last Splitter-->
                                 </Grid.RowDefinitions>
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition Width="2*" MinWidth="200"/>
-                                    <ColumnDefinition Width="Auto"/> <!--Splitter Column-->
+                                    <ColumnDefinition Width="Auto"/>
+                                    <!--Splitter Column-->
                                     <ColumnDefinition Width="3*" MinWidth="200"/>
                                 </Grid.ColumnDefinitions>
 
@@ -4528,12 +4534,15 @@
                             <Grid Margin="-8,0,2,0">
                                 <Grid.RowDefinitions>
                                     <RowDefinition Height="{Binding Config.CustomGameSettingsGridHeight, ElementName=SettingsControl, FallbackValue=400, Mode=TwoWay}" MinHeight="200"/>
-                                    <RowDefinition Height="Auto"/> <!--Splitter Row-->
-                                    <RowDefinition Height="1" MinHeight="1"/> <!--Empty Row for Last Splitter-->
+                                    <RowDefinition Height="Auto"/>
+                                    <!--Splitter Row-->
+                                    <RowDefinition Height="1" MinHeight="1"/>
+                                    <!--Empty Row for Last Splitter-->
                                 </Grid.RowDefinitions>
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition Width="2*" MinWidth="200"/>
-                                    <ColumnDefinition Width="Auto"/> <!--Splitter Column-->
+                                    <ColumnDefinition Width="Auto"/>
+                                    <!--Splitter Column-->
                                     <ColumnDefinition Width="3*" MinWidth="200"/>
                                 </Grid.ColumnDefinitions>
 
@@ -4687,12 +4696,15 @@
                             <Grid Margin="-8,0,2,0">
                                 <Grid.RowDefinitions>
                                     <RowDefinition Height="{Binding Config.CustomEngineSettingsGridHeight, ElementName=SettingsControl, FallbackValue=400, Mode=TwoWay}" MinHeight="200"/>
-                                    <RowDefinition Height="Auto"/> <!--Splitter Row-->
-                                    <RowDefinition Height="1" MinHeight="1"/> <!--Empty Row for Last Splitter-->
+                                    <RowDefinition Height="Auto"/>
+                                    <!--Splitter Row-->
+                                    <RowDefinition Height="1" MinHeight="1"/>
+                                    <!--Empty Row for Last Splitter-->
                                 </Grid.RowDefinitions>
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition Width="2*" MinWidth="200"/>
-                                    <ColumnDefinition Width="Auto"/> <!--Splitter Column-->
+                                    <ColumnDefinition Width="Auto"/>
+                                    <!--Splitter Column-->
                                     <ColumnDefinition Width="3*" MinWidth="200"/>
                                 </Grid.ColumnDefinitions>
 
@@ -4855,12 +4867,15 @@
                                     <RowDefinition/>
                                     <RowDefinition/>
                                     <RowDefinition Height="{Binding Config.CustomLevelsGridHeight, ElementName=SettingsControl, FallbackValue=400, Mode=TwoWay}" MinHeight="200"/>
-                                    <RowDefinition Height="Auto"/> <!--Splitter Row-->
-                                    <RowDefinition Height="1" MinHeight="1"/> <!--Empty Row for Last Splitter-->
+                                    <RowDefinition Height="Auto"/>
+                                    <!--Splitter Row-->
+                                    <RowDefinition Height="1" MinHeight="1"/>
+                                    <!--Empty Row for Last Splitter-->
                                 </Grid.RowDefinitions>
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition Width="10*" MinWidth="200"/>
-                                    <ColumnDefinition Width="Auto"/> <!--Splitter Column-->
+                                    <ColumnDefinition Width="Auto"/>
+                                    <!--Splitter Column-->
                                     <ColumnDefinition Width="7*" MinWidth="200"/>
                                 </Grid.ColumnDefinitions>
 
@@ -5071,12 +5086,15 @@
                                     <RowDefinition/>
                                     <RowDefinition/>
                                     <RowDefinition Height="{Binding Config.CraftingOverrideItemGridHeight, ElementName=SettingsControl, FallbackValue=400, Mode=TwoWay}" MinHeight="200"/>
-                                    <RowDefinition Height="Auto"/> <!--Splitter Row-->
-                                    <RowDefinition Height="1" MinHeight="1"/> <!--Empty Row for Last Splitter-->
+                                    <RowDefinition Height="Auto"/>
+                                    <!--Splitter Row-->
+                                    <RowDefinition Height="1" MinHeight="1"/>
+                                    <!--Empty Row for Last Splitter-->
                                 </Grid.RowDefinitions>
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition Width="2*" MinWidth="200"/>
-                                    <ColumnDefinition Width="Auto"/> <!--Splitter Column-->
+                                    <ColumnDefinition Width="Auto"/>
+                                    <!--Splitter Column-->
                                     <ColumnDefinition Width="3*" MinWidth="200"/>
                                 </Grid.ColumnDefinitions>
 
@@ -5311,8 +5329,10 @@
                                     <RowDefinition/>
                                     <RowDefinition/>
                                     <RowDefinition Height="{Binding Config.StackSizeOverrideGridHeight, ElementName=SettingsControl, FallbackValue=400, Mode=TwoWay}" MinHeight="200"/>
-                                    <RowDefinition Height="Auto"/> <!--Splitter Row-->
-                                    <RowDefinition Height="1" MinHeight="1"/> <!--Empty Row for Last Splitter-->
+                                    <RowDefinition Height="Auto"/>
+                                    <!--Splitter Row-->
+                                    <RowDefinition Height="1" MinHeight="1"/>
+                                    <!--Empty Row for Last Splitter-->
                                 </Grid.RowDefinitions>
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition />
@@ -5391,7 +5411,7 @@
                                                     </DataTemplate>
                                                 </DataGridTemplateColumn.CellTemplate>
                                             </DataGridTemplateColumn>
-                                            
+
                                             <DataGridTextColumn     MinWidth="100" Width="Auto" Binding="{Binding MaxItemQuantity}" ElementStyle="{StaticResource CenteredTextBlockStyle}" >
                                                 <DataGridTextColumn.Header>
                                                     <TextBlock Text="{DynamicResource ServerSettings_StackSizeOverrides_MaxItemQuantityColumnLabel}" ToolTip="{DynamicResource ServerSettings_StackSizeOverrides_MaxItemQuantityColumnTooltip}" />
@@ -5423,7 +5443,7 @@
                                                     </DataTemplate>
                                                 </DataGridTemplateColumn.CellTemplate>
                                             </DataGridTemplateColumn>
-                                            
+
                                             <DataGridTemplateColumn Width="30" CanUserReorder="False" IsReadOnly="True">
                                                 <DataGridTemplateColumn.CellTemplate>
                                                     <DataTemplate>
@@ -5471,12 +5491,15 @@
                                 <Grid.RowDefinitions>
                                     <RowDefinition/>
                                     <RowDefinition Height="{Binding Config.NPCSpawnSettingsGridHeight, ElementName=SettingsControl, FallbackValue=400, Mode=TwoWay}" MinHeight="200"/>
-                                    <RowDefinition Height="Auto"/> <!--Splitter Row-->
-                                    <RowDefinition Height="1" MinHeight="1"/> <!--Empty Row for Last Splitter-->
+                                    <RowDefinition Height="Auto"/>
+                                    <!--Splitter Row-->
+                                    <RowDefinition Height="1" MinHeight="1"/>
+                                    <!--Empty Row for Last Splitter-->
                                 </Grid.RowDefinitions>
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition Width="2*" MinWidth="200"/>
-                                    <ColumnDefinition Width="Auto"/> <!--Splitter Column-->
+                                    <ColumnDefinition Width="Auto"/>
+                                    <!--Splitter Column-->
                                     <ColumnDefinition Width="3*" MinWidth="200"/>
                                 </Grid.ColumnDefinitions>
 
@@ -5644,7 +5667,7 @@
                                                     <TextBlock Text="{DynamicResource ServerSettings_MapSpawnerOverrides_EntryNameColumnLabel}" ToolTip="{DynamicResource ServerSettings_MapSpawnerOverrides_EntryNameColumnTooltip}" />
                                                 </DataGridTextColumn.Header>
                                             </DataGridTextColumn>
-                                            
+
                                             <DataGridTemplateColumn Width="2*" CanUserSort="True" SortMemberPath="DisplayName" Visibility="{Binding Data.ShowClassStringColumn, Converter={StaticResource BooleanToVisibilityConverter}, Source={StaticResource proxySelectedNPCSpawnSetting}}">
                                                 <DataGridTemplateColumn.Header>
                                                     <TextBlock Text="{DynamicResource ServerSettings_MapSpawnerOverrides_EntryClassColumnLabel}" ToolTip="{DynamicResource ServerSettings_MapSpawnerOverrides_EntryClassColumnTooltip}" />
@@ -5655,19 +5678,19 @@
                                                     </DataTemplate>
                                                 </DataGridTemplateColumn.CellTemplate>
                                             </DataGridTemplateColumn>
-                                            
+
                                             <DataGridTextColumn     Width="1*" Binding="{Binding EntryWeight}" Visibility="{Binding Data.ShowEntryWeightColumn, Converter={StaticResource BooleanToVisibilityConverter}, Source={StaticResource proxySelectedNPCSpawnSetting}}">
                                                 <DataGridTextColumn.Header>
                                                     <TextBlock Text="{DynamicResource ServerSettings_MapSpawnerOverrides_EntryWeightClassColumnLabel}" ToolTip="{DynamicResource ServerSettings_MapSpawnerOverrides_EntryWeightClassColumnTooltip}" />
                                                 </DataGridTextColumn.Header>
                                             </DataGridTextColumn>
-                                            
+
                                             <DataGridTextColumn     Width="1*" Binding="{Binding MaxPercentageOfDesiredNumToAllow}" Visibility="{Binding Data.ShowMaxPercentageColumn, Converter={StaticResource BooleanToVisibilityConverter}, Source={StaticResource proxySelectedNPCSpawnSetting}}">
                                                 <DataGridTextColumn.Header>
                                                     <TextBlock Text="{DynamicResource ServerSettings_MapSpawnerOverrides_EntryMaxPercentageColumnLabel}" ToolTip="{DynamicResource ServerSettings_MapSpawnerOverrides_EntryMaxPercentageColumnTooltip}" />
                                                 </DataGridTextColumn.Header>
                                             </DataGridTextColumn>
-                                            
+
                                             <DataGridTemplateColumn Width="30" CanUserReorder="False" IsReadOnly="True">
                                                 <DataGridTemplateColumn.CellTemplate>
                                                     <DataTemplate>
@@ -5716,14 +5739,19 @@
                                     <RowDefinition/>
                                     <RowDefinition/>
                                     <RowDefinition Height="{Binding Config.SupplyCratesGridHeight, ElementName=SettingsControl, FallbackValue=200, Mode=TwoWay}" MinHeight="200"/>
-                                    <RowDefinition Height="Auto"/> <!--Splitter Row-->
+                                    <RowDefinition Height="Auto"/>
+                                    <!--Splitter Row-->
                                     <RowDefinition Height="{Binding Config.SupplyCrateItemSetsGridHeight, ElementName=SettingsControl, FallbackValue=200, Mode=TwoWay}" MinHeight="200"/>
-                                    <RowDefinition Height="Auto"/> <!--Splitter Row-->
+                                    <RowDefinition Height="Auto"/>
+                                    <!--Splitter Row-->
                                     <RowDefinition Height="{Binding Config.SupplyCrateItemSetEntriesGridHeight, ElementName=SettingsControl, FallbackValue=200, Mode=TwoWay}" MinHeight="200"/>
-                                    <RowDefinition Height="Auto"/> <!--Splitter Row-->
+                                    <RowDefinition Height="Auto"/>
+                                    <!--Splitter Row-->
                                     <RowDefinition Height="{Binding Config.SupplyCrateItemsGridHeight, ElementName=SettingsControl, FallbackValue=200, Mode=TwoWay}" MinHeight="200"/>
-                                    <RowDefinition Height="Auto"/> <!--Splitter Row-->
-                                    <RowDefinition Height="1" MinHeight="1"/> <!--Empty Row for Last Splitter-->
+                                    <RowDefinition Height="Auto"/>
+                                    <!--Splitter Row-->
+                                    <RowDefinition Height="1" MinHeight="1"/>
+                                    <!--Empty Row for Last Splitter-->
                                 </Grid.RowDefinitions>
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition />
@@ -5820,7 +5848,7 @@
                                                     <TextBlock Text="{DynamicResource ServerSettings_SupplyCrate_Crate_NumItemSetsPowerColumnLabel}" ToolTip="{DynamicResource ServerSettings_SupplyCrate_Crate_NumItemSetsPowerColumnTooltip}" TextWrapping="Wrap"/>
                                                 </DataGridTextColumn.Header>
                                             </DataGridTextColumn>
-                                            
+
                                             <DataGridTemplateColumn Width="Auto" MinWidth="50">
                                                 <DataGridTemplateColumn.Header>
                                                     <TextBlock Text="{DynamicResource ServerSettings_SupplyCrate_Crate_SetsRandomWithoutReplacementColumnLabel}" ToolTip="{DynamicResource ServerSettings_SupplyCrate_Crate_SetsRandomWithoutReplacementColumnTooltip}" TextWrapping="Wrap"/>
@@ -5878,7 +5906,7 @@
                                                     </DataTemplate>
                                                 </DataGridTemplateColumn.CellTemplate>
                                             </DataGridTemplateColumn>
-                                            
+
                                             <DataGridTemplateColumn Width="30" IsReadOnly="True" CanUserReorder="False" CanUserResize="False">
                                                 <DataGridTemplateColumn.CellTemplate>
                                                     <DataTemplate>
@@ -5893,7 +5921,7 @@
                                 </GroupBox>
 
                                 <GridSplitter Grid.Row="3" Grid.Column="0" Height="5" ShowsPreview="True" HorizontalAlignment="Stretch" VerticalAlignment="Center" Opacity="0"/>
-                                
+
                                 <GroupBox  Grid.Row="4" Grid.Column="0" HorizontalAlignment="Stretch" Style="{StaticResource GroupBoxStyle}">
                                     <GroupBox.Header>
                                         <StackPanel Orientation="Horizontal">
@@ -5992,7 +6020,7 @@
                                                     </DataTemplate>
                                                 </DataGridTemplateColumn.CellTemplate>
                                             </DataGridTemplateColumn>
-                                            
+
                                             <DataGridTemplateColumn Width="30" IsReadOnly="True" CanUserReorder="False" CanUserResize="False">
                                                 <DataGridTemplateColumn.CellTemplate>
                                                     <DataTemplate>
@@ -6118,7 +6146,7 @@
                                                     <TextBlock Text="{DynamicResource ServerSettings_SupplyCrate_ItemSetEntry_ChanceToBeBlueprintOverrideColumnLabel}" ToolTip="{DynamicResource ServerSettings_SupplyCrate_ItemSetEntry_ChanceToBeBlueprintOverrideColumnTooltip}" TextWrapping="Wrap"/>
                                                 </DataGridTextColumn.Header>
                                             </DataGridTextColumn>
-                                            
+
                                             <DataGridTemplateColumn Width="30" IsReadOnly="True" CanUserReorder="False" CanUserResize="False">
                                                 <DataGridTemplateColumn.CellTemplate>
                                                     <DataTemplate>
@@ -6386,8 +6414,10 @@
                                     <RowDefinition/>
                                     <RowDefinition/>
                                     <RowDefinition Height="{Binding Config.PreventTransferOverrideGridHeight, ElementName=SettingsControl, FallbackValue=400, Mode=TwoWay}" MinHeight="200"/>
-                                    <RowDefinition Height="Auto"/> <!--Splitter Row-->
-                                    <RowDefinition Height="1" MinHeight="1"/> <!--Empty Row for Last Splitter-->
+                                    <RowDefinition Height="Auto"/>
+                                    <!--Splitter Row-->
+                                    <RowDefinition Height="1" MinHeight="1"/>
+                                    <!--Empty Row for Last Splitter-->
                                 </Grid.RowDefinitions>
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition />

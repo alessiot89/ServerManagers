@@ -631,46 +631,6 @@ namespace ServerManagerTool.Lib
             set { SetValue(TribeLogDestroyedEnemyStructuresProperty, value); }
         }
 
-        public static readonly DependencyProperty ForceDirectX10Property = DependencyProperty.Register(nameof(ForceDirectX10), typeof(bool), typeof(ServerProfile), new PropertyMetadata(false));
-        [DataMember]
-        public bool ForceDirectX10
-        {
-            get { return (bool)GetValue(ForceDirectX10Property); }
-            set { SetValue(ForceDirectX10Property, value); }
-        }
-
-        public static readonly DependencyProperty ForceShaderModel4Property = DependencyProperty.Register(nameof(ForceShaderModel4), typeof(bool), typeof(ServerProfile), new PropertyMetadata(false));
-        [DataMember]
-        public bool ForceShaderModel4
-        {
-            get { return (bool)GetValue(ForceShaderModel4Property); }
-            set { SetValue(ForceShaderModel4Property, value); }
-        }
-
-        public static readonly DependencyProperty ForceLowMemoryProperty = DependencyProperty.Register(nameof(ForceLowMemory), typeof(bool), typeof(ServerProfile), new PropertyMetadata(false));
-        [DataMember]
-        public bool ForceLowMemory
-        {
-            get { return (bool)GetValue(ForceLowMemoryProperty); }
-            set { SetValue(ForceLowMemoryProperty, value); }
-        }
-
-        public static readonly DependencyProperty ForceNoManSkyProperty = DependencyProperty.Register(nameof(ForceNoManSky), typeof(bool), typeof(ServerProfile), new PropertyMetadata(false));
-        [DataMember]
-        public bool ForceNoManSky
-        {
-            get { return (bool)GetValue(ForceNoManSkyProperty); }
-            set { SetValue(ForceNoManSkyProperty, value); }
-        }
-
-        public static readonly DependencyProperty UseNoMemoryBiasProperty = DependencyProperty.Register(nameof(UseNoMemoryBias), typeof(bool), typeof(ServerProfile), new PropertyMetadata(false));
-        [DataMember]
-        public bool UseNoMemoryBias
-        {
-            get { return (bool)GetValue(UseNoMemoryBiasProperty); }
-            set { SetValue(UseNoMemoryBiasProperty, value); }
-        }
-
         public static readonly DependencyProperty StasisKeepControllersProperty = DependencyProperty.Register(nameof(StasisKeepControllers), typeof(bool), typeof(ServerProfile), new PropertyMetadata(false));
         [DataMember]
         public bool StasisKeepControllers
@@ -4291,31 +4251,6 @@ namespace ServerManagerTool.Lib
                 serverArgs.Append(" -NotifyAdminCommandsInChat");
             }
 
-            if (this.ForceDirectX10)
-            {
-                serverArgs.Append(" -d3d10");
-            }
-
-            if (this.ForceShaderModel4)
-            {
-                serverArgs.Append(" -sm4");
-            }
-
-            if (this.ForceLowMemory)
-            {
-                serverArgs.Append(" -lowmemory");
-            }
-
-            if (this.ForceNoManSky)
-            {
-                serverArgs.Append(" -nomansky");
-            }
-
-            if (this.UseNoMemoryBias)
-            {
-                serverArgs.Append(" -nomemorybias");
-            }
-
             if (this.StasisKeepControllers)
             {
                 serverArgs.Append(" -StasisKeepControllers");
@@ -5680,11 +5615,6 @@ namespace ServerManagerTool.Lib
             this.ClearValue(ServerAutoForceRespawnWildDinosIntervalProperty);
             this.ClearValue(EnableServerAdminLogsProperty);
             this.ClearValue(MaxTribeLogsProperty);
-            this.ClearValue(ForceDirectX10Property);
-            this.ClearValue(ForceShaderModel4Property);
-            this.ClearValue(ForceLowMemoryProperty);
-            this.ClearValue(ForceNoManSkyProperty);
-            this.ClearValue(UseNoMemoryBiasProperty);
             this.ClearValue(UseNoHangDetectionProperty);
             this.ClearValue(ServerAllowAnselProperty);
             this.ClearValue(StructureMemoryOptimizationsProperty);
@@ -6406,11 +6336,6 @@ namespace ServerManagerTool.Lib
             this.SetValue(ForceRespawnDinosProperty, sourceProfile.ForceRespawnDinos);
             this.SetValue(EnableServerAutoForceRespawnWildDinosIntervalProperty, sourceProfile.EnableServerAutoForceRespawnWildDinosInterval);
             this.SetValue(ServerAutoForceRespawnWildDinosIntervalProperty, sourceProfile.ServerAutoForceRespawnWildDinosInterval);
-            this.SetValue(ForceDirectX10Property, sourceProfile.ForceDirectX10);
-            this.SetValue(ForceShaderModel4Property, sourceProfile.ForceShaderModel4);
-            this.SetValue(ForceLowMemoryProperty, sourceProfile.ForceLowMemory);
-            this.SetValue(ForceNoManSkyProperty, sourceProfile.ForceNoManSky);
-            this.SetValue(UseNoMemoryBiasProperty, sourceProfile.UseNoMemoryBias);
             this.SetValue(StasisKeepControllersProperty, sourceProfile.StasisKeepControllers);
             this.SetValue(ServerAllowAnselProperty, sourceProfile.ServerAllowAnsel);
             this.SetValue(StructureMemoryOptimizationsProperty, sourceProfile.StructureMemoryOptimizations);

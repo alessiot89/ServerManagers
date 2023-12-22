@@ -1223,16 +1223,6 @@
     <sys:String x:Key="ServerSettings_UseCacheTooltip">如果启用，加载速度可提高约70%。你开始游戏的第一次和第二次仍然会很慢，但是第三次以后会很快。</sys:String>
     <sys:String x:Key="ServerSettings_UseOldSaveFormatLabel">使用旧的保存格式</sys:String>
     <sys:String x:Key="ServerSettings_UseOldSaveFormatTooltip">如果启用，将使用旧的保存格式。 新的保存不向后兼容。</sys:String>
-    <sys:String x:Key="ServerSettings_ForceDirectX10Label">强制 DirectX 10</sys:String>
-    <sys:String x:Key="ServerSettings_ForceDirectX10Tooltip">如果启用，游戏将被迫使用DirectX 10而不是DirectX 11。</sys:String>
-    <sys:String x:Key="ServerSettings_ForceShaderModel4Label">强制优化渲染引擎模式4</sys:String>
-    <sys:String x:Key="ServerSettings_ForceShaderModel4Tooltip">如果启用，游戏被迫使用优化渲染引擎模式4，而不是优化渲染引擎模式5。</sys:String>
-    <sys:String x:Key="ServerSettings_ForceLowMemoryLabel">强制使用低内存</sys:String>
-    <sys:String x:Key="ServerSettings_ForceLowMemoryTooltip">如果启用，减少图形和音频效果，以节省约800 MB内存，可能使4G内存的玩家通过无限加载屏幕。</sys:String>
-    <sys:String x:Key="ServerSettings_ForceNoManSkyLabel">强制使用无天空特效</sys:String>
-    <sys:String x:Key="ServerSettings_ForceNoManSkyTooltip">如果启用，大量的详细的天空功能是被禁用的，如云彩和繁星点点的夜空。你仍然可以看到星星，太阳和月亮。这只会帮助您消除使您在夜间看不见的闪闪发光的星星。</sys:String>
-    <sys:String x:Key="ServerSettings_UseNoMemoryBiasLabel">使用无内存偏差</sys:String>
-    <sys:String x:Key="ServerSettings_UseNoMemoryBiasTooltip">如果启用，将使用旧的方法，更多的内存使用，但没有潜在的性能损失。</sys:String>
     <sys:String x:Key="ServerSettings_StasisKeepControllersLabel">停滞保持控制器</sys:String>
     <sys:String x:Key="ServerSettings_StasisKeepControllersTooltip">如果启用，服务器可以通过将人工智能保存在静态生物的内存中来获得性能。 注意:你的服务器必须有大量的内存，否则你的服务器会有很大的内存开销。</sys:String>
     <sys:String x:Key="ServerSettings_UseNoHangDetectionLabel">无挂起检测</sys:String>

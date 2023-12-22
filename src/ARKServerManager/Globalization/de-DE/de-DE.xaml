@@ -1111,16 +1111,6 @@
     <sys:String x:Key="ServerSettings_UseCacheTooltip">Wenn aktiviert, ~ 70% schnellere Ladegeschwindigkeitsoption. Das erste und zweite Mal, wenn Sie das Spiel starten, ist immer noch langsam, aber das dritte Mal danach ist schnell.</sys:String>
     <sys:String x:Key="ServerSettings_UseOldSaveFormatLabel">Verwende das alte Speicherformat</sys:String>
     <sys:String x:Key="ServerSettings_UseOldSaveFormatTooltip">Wenn aktiviert, wird das alte Sicherungsformat verwendet. Neue Speicherungen sind nicht abwärtskompatibel.</sys:String>
-    <sys:String x:Key="ServerSettings_ForceDirectX10Label">DirectX 10 erzwingen</sys:String>
-    <sys:String x:Key="ServerSettings_ForceDirectX10Tooltip">Wenn aktiviert, muss das Spiel DirectX 10 anstelle von DirectX 11 verwenden.</sys:String>
-    <sys:String x:Key="ServerSettings_ForceShaderModel4Label">Erzwinge Shader Model 4</sys:String>
-    <sys:String x:Key="ServerSettings_ForceShaderModel4Tooltip">Wenn aktiviert, muss das Spiel Shader Model 4 anstelle von Shader Model 5 verwenden.</sys:String>
-    <sys:String x:Key="ServerSettings_ForceLowMemoryLabel">Erzwinge reduzierten Speicher</sys:String>
-    <sys:String x:Key="ServerSettings_ForceLowMemoryTooltip">Wenn aktiviert, werden Grafik- und Audioeffekte reduziert, um etwa 800 MB RAM zu sparen. Dadurch können 4GB RAM Spieler wahrscheinlich an unendlichen Ladebildschirmen vorbeikommen.</sys:String>
-    <sys:String x:Key="ServerSettings_ForceNoManSkyLabel">Erzwinge reduzierten Himmel</sys:String>
-    <sys:String x:Key="ServerSettings_ForceNoManSkyTooltip">Wenn aktiviert, sind viele der detaillierten Himmelsfunktionen deaktiviert, z. B. Wolken und Sternenhimmel. Du siehst immer noch die Sterne, die Sonne und den Mond.</sys:String>
-    <sys:String x:Key="ServerSettings_UseNoMemoryBiasLabel">Verwende kein Speichervorladen</sys:String>
-    <sys:String x:Key="ServerSettings_UseNoMemoryBiasTooltip">Wenn aktiviert, wird die alte Methode verwendet, mehr RAM-Nutzung, aber kein potenzieller Leistungsverlust.</sys:String>
     <sys:String x:Key="ServerSettings_StasisKeepControllersLabel">Statischer KI Kontroller</sys:String>
     <sys:String x:Key="ServerSettings_StasisKeepControllersTooltip">Wenn aktiviert, kann der Server an Leistung gewinnen, indem die KI im Speicher statisierter Kreaturen gespeichert werden. HINWEIS: Dein Server muss über viel RAM verfügen, da Dein Server sonst unter einem hohen Speicheraufwand leidet.</sys:String>
     <sys:String x:Key="ServerSettings_UseNoHangDetectionLabel">Keine Aufhängerkennung</sys:String>

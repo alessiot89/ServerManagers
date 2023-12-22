@@ -1221,16 +1221,6 @@
     <sys:String x:Key="ServerSettings_UseCacheTooltip">Etkinleştirildiğinde, ~%70 daha hızlı yükleme hızı seçeneği. Oyunu ilk ve ikinci kez başlattığınızda hala yavaş olacak, ancak üçüncü kez başlatmada hızlı olacaktır.</sys:String>
     <sys:String x:Key="ServerSettings_UseOldSaveFormatLabel">Eski Kaydetme Formatını Kullan</sys:String>
     <sys:String x:Key="ServerSettings_UseOldSaveFormatTooltip">Etkinleştirildiğinde, eski kaydetme formatı kullanılır. Yeni kayıtlar geriye dönük uyumlu değildir.</sys:String>
-    <sys:String x:Key="ServerSettings_ForceDirectX10Label">DirectX 10'u Zorla</sys:String>
-    <sys:String x:Key="ServerSettings_ForceDirectX10Tooltip">Etkinleştirildiğinde, oyunun DirectX 10'u kullanması zorlanır, DirectX 11 yerine.</sys:String>
-    <sys:String x:Key="ServerSettings_ForceShaderModel4Label">Shader Model 4'ü Zorla</sys:String>
-    <sys:String x:Key="ServerSettings_ForceShaderModel4Tooltip">Etkinleştirildiğinde, oyunun Shader Model 4'ü kullanması zorlanır, Shader Model 5 yerine.</sys:String>
-    <sys:String x:Key="ServerSettings_ForceLowMemoryLabel">Düşük Belleği Zorla</sys:String>
-    <sys:String x:Key="ServerSettings_ForceLowMemoryTooltip">Etkinleştirildiğinde, yaklaşık 800 MB RAM tasarrufu için grafik ve ses efektlerini azaltır, muhtemelen 4 GB RAM oyuncularının sonsuz yükleme ekranlarını aşmalarını sağlar.</sys:String>
-    <sys:String x:Key="ServerSettings_ForceNoManSkyLabel">No Man Sky'ı Zorla</sys:String>
-    <sys:String x:Key="ServerSettings_ForceNoManSkyTooltip">Etkinleştirildiğinde, bulutlar ve yıldızlı gece gökyüzü gibi ayrıntılı gökyüzü özellikleri devre dışı bırakılır. Hala yıldızları, güneşi ve ayı görebilirsiniz.</sys:String>
-    <sys:String x:Key="ServerSettings_UseNoMemoryBiasLabel">Bellek Eğilimini Kullanma</sys:String>
-    <sys:String x:Key="ServerSettings_UseNoMemoryBiasTooltip">Etkinleştirildiğinde, eski yöntemi kullanır, daha fazla RAM kullanımı ancak potansiyel performans kaybı yoktur.</sys:String>
     <sys:String x:Key="ServerSettings_StasisKeepControllersLabel">Stasis Kontrolcülerini Sakla</sys:String>
     <sys:String x:Key="ServerSettings_StasisKeepControllersTooltip">Etkinleştirildiğinde, sunucu, istirahat halindeki yaratıkların belleğinde AI'leri saklayarak performans kazanabilir. NOT: Sunucunuzun büyük bir bellek kullanımı yoksa büyük bir bellek yükü nedeniyle sunucunuz sorun yaşayabilir.</sys:String>
     <sys:String x:Key="ServerSettings_UseNoHangDetectionLabel">Mesh Hile Algılamayı Kapat</sys:String>

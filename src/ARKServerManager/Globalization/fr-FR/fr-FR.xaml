@@ -1204,16 +1204,6 @@
     <sys:String x:Key="ServerSettings_UseCacheTooltip">Si activé, ~ 70% plus rapide pour les options de chargement. La première et la deuxième fois que vous commencez le jeu sera encore lente, mais la troisième fois sera rapide.</sys:String>
     <sys:String x:Key="ServerSettings_UseOldSaveFormatLabel">Utiliser l'ancien format de sauvegarde</sys:String>
     <sys:String x:Key="ServerSettings_UseOldSaveFormatTooltip">Si activé, utilisera l'ancien format de sauvegarde. Les nouvelles sauvegardes ne sont pas rétrocompatibles.</sys:String>
-    <sys:String x:Key="ServerSettings_ForceDirectX10Label">Forcer DirectX 10</sys:String>
-    <sys:String x:Key="ServerSettings_ForceDirectX10Tooltip">Si activé, le jeu est forcé d'utiliser DirectX 10 au lieu de DirectX 11.</sys:String>
-    <sys:String x:Key="ServerSettings_ForceShaderModel4Label">Forcer Shader Model 4</sys:String>
-    <sys:String x:Key="ServerSettings_ForceShaderModel4Tooltip">Si activé, le jeu est forcé d'utiliser Shader Model 4 au lieu du Shader Model 5.</sys:String>
-    <sys:String x:Key="ServerSettings_ForceLowMemoryLabel">Forcer faible mémoire</sys:String>
-    <sys:String x:Key="ServerSettings_ForceLowMemoryTooltip">Si activé, réduit les effets graphiques et audio pour économiser environ 800 Mo de RAM, permettant probablement aux pc de 4 Go de RAM de dépasser les écrans à chargement infini.</sys:String>
-    <sys:String x:Key="ServerSettings_ForceNoManSkyLabel">Désactiver effects du ciel</sys:String>
-    <sys:String x:Key="ServerSettings_ForceNoManSkyTooltip">Si activé, de nombreuses fonctionnalités détaillées du ciel sont désactivées, telles que les nuages et le ciel nocturne étoilé. Vous voyez toujours les étoiles, le soleil et la lune.</sys:String>
-    <sys:String x:Key="ServerSettings_UseNoMemoryBiasLabel">Utiliser aucun biais de mémoire</sys:String>
-    <sys:String x:Key="ServerSettings_UseNoMemoryBiasTooltip">Si activé, utilisera l'ancienne méthode, plus d'utilisation de la RAM mais pas de perte de performance potentielle.</sys:String>
     <sys:String x:Key="ServerSettings_StasisKeepControllersLabel">Gardez le contrôle de Stase</sys:String>
     <sys:String x:Key="ServerSettings_StasisKeepControllersTooltip">Si activé, le serveur peut gagner en performance en gardant les IA en mémoire des créatures classées. NOTE: votre serveur doit avoir beaucoup de RAM sinon votre serveur souffrira d'une surcharge de mémoire importante.</sys:String>
     <sys:String x:Key="ServerSettings_UseNoHangDetectionLabel">Aucune détection de blocage</sys:String>
