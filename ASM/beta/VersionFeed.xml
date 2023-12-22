@@ -20,7 +20,7 @@
                     <br/>
                     <ul>
                         <li>Allow exclusive join list write when server is running</li>
-                        <li>Removed client-onli legacy mode startup options</li>
+                        <li>Removed client-only legacy mode startup options</li>
                     </ul>
                 </p>
             </div>
