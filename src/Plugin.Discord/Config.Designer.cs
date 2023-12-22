@@ -70,7 +70,7 @@ namespace ServerManagerTool.Plugin.Discord {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("https://raw.githubusercontent.com/Bletch1971/ServerManagers/master/Plugins/Discor" +
+        [global::System.Configuration.DefaultSettingValueAttribute("https://raw.githubusercontent.com/alessiot89/ServerManagers/master/Plugins/Discor" +
             "d/latest.zip")]
         public string LatestDownloadUrl {
             get {
@@ -80,7 +80,7 @@ namespace ServerManagerTool.Plugin.Discord {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("https://raw.githubusercontent.com/Bletch1971/ServerManagers/master/Plugins/Discor" +
+        [global::System.Configuration.DefaultSettingValueAttribute("https://raw.githubusercontent.com/alessiot89/ServerManagers/master/Plugins/Discor" +
             "d/latest.txt")]
         public string LatestVersionUrl {
             get {
@@ -90,7 +90,7 @@ namespace ServerManagerTool.Plugin.Discord {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("https://raw.githubusercontent.com/Bletch1971/ServerManagers/master/Plugins/Discor" +
+        [global::System.Configuration.DefaultSettingValueAttribute("https://raw.githubusercontent.com/alessiot89/ServerManagers/master/Plugins/Discor" +
             "d/beta/latest.zip")]
         public string LatestBetaDownloadUrl {
             get {
@@ -100,7 +100,7 @@ namespace ServerManagerTool.Plugin.Discord {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("https://raw.githubusercontent.com/Bletch1971/ServerManagers/master/Plugins/Discor" +
+        [global::System.Configuration.DefaultSettingValueAttribute("https://raw.githubusercontent.com/alessiot89/ServerManagers/master/Plugins/Discor" +
             "d/beta/latest.txt")]
         public string LatestBetaVersionUrl {
             get {
@@ -128,7 +128,7 @@ namespace ServerManagerTool.Plugin.Discord {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("https://raw.githubusercontent.com/Bletch1971/ServerManagers/master/Plugins/Discor" +
+        [global::System.Configuration.DefaultSettingValueAttribute("https://raw.githubusercontent.com/alessiot89/ServerManagers/master/Plugins/Discor" +
             "d/VersionFeed.xml")]
         public string VersionFeedUrl {
             get {
@@ -138,7 +138,7 @@ namespace ServerManagerTool.Plugin.Discord {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("https://raw.githubusercontent.com/Bletch1971/ServerManagers/master/Plugins/Discor" +
+        [global::System.Configuration.DefaultSettingValueAttribute("https://raw.githubusercontent.com/alessiot89/ServerManagers/master/Plugins/Discor" +
             "d/beta/VersionFeed.xml")]
         public string VersionBetaFeedUrl {
             get {

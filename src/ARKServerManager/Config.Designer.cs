@@ -271,7 +271,7 @@ namespace ServerManagerTool {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("https://raw.githubusercontent.com/Bletch1971/ServerManagers/master/ASM/latest.txt" +
+        [global::System.Configuration.DefaultSettingValueAttribute("https://raw.githubusercontent.com/alessiot89/ServerManagers/master/ASM/latest.txt" +
             "")]
         public string LatestASMVersionUrl {
             get {
@@ -1151,7 +1151,7 @@ namespace ServerManagerTool {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("https://raw.githubusercontent.com/Bletch1971/ServerManagers/master/ASM/beta/lates" +
+        [global::System.Configuration.DefaultSettingValueAttribute("https://raw.githubusercontent.com/alessiot89/ServerManagers/master/ASM/beta/lates" +
             "t.txt")]
         public string LatestASMBetaVersionUrl {
             get {
@@ -1161,7 +1161,7 @@ namespace ServerManagerTool {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("https://raw.githubusercontent.com/Bletch1971/ServerManagers/master/ASM/beta/lates" +
+        [global::System.Configuration.DefaultSettingValueAttribute("https://raw.githubusercontent.com/alessiot89/ServerManagers/master/ASM/beta/lates" +
             "t.zip")]
         public string LatestASMBetaDownloadUrl {
             get {
@@ -1171,7 +1171,7 @@ namespace ServerManagerTool {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("https://raw.githubusercontent.com/Bletch1971/ServerManagers/master/ASM/latest.zip" +
+        [global::System.Configuration.DefaultSettingValueAttribute("https://raw.githubusercontent.com/alessiot89/ServerManagers/master/ASM/latest.zip" +
             "")]
         public string LatestASMDownloadUrl {
             get {
@@ -2049,7 +2049,7 @@ namespace ServerManagerTool {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("https://raw.githubusercontent.com/Bletch1971/ServerManagers/master/ASM/VersionFee" +
+        [global::System.Configuration.DefaultSettingValueAttribute("https://raw.githubusercontent.com/alessiot89/ServerManagers/master/ASM/VersionFee" +
             "d.xml")]
         public string ServerManagerVersionFeedUrl {
             get {
@@ -2059,7 +2059,7 @@ namespace ServerManagerTool {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("https://raw.githubusercontent.com/Bletch1971/ServerManagers/master/ASM/beta/Versi" +
+        [global::System.Configuration.DefaultSettingValueAttribute("https://raw.githubusercontent.com/alessiot89/ServerManagers/master/ASM/beta/Versi" +
             "onFeed.xml")]
         public string ServerManagerVersionBetaFeedUrl {
             get {
