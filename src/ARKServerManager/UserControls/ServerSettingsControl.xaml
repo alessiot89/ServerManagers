@@ -4279,7 +4279,7 @@
                                                     <Setter Property="IsEnabled" Value="False"/>
                                                 </DataTrigger>
                                                 <DataTrigger Binding="{Binding Runtime.Status, ElementName=SettingsControl}" Value="{x:Static ce:ServerStatus.Running}">
-                                                    <Setter Property="IsEnabled" Value="False"/>
+                                                    <Setter Property="IsEnabled" Value="True"/>
                                                 </DataTrigger>
                                                 <DataTrigger Binding="{Binding Runtime.Status, ElementName=SettingsControl}" Value="{x:Static ce:ServerStatus.Stopping}">
                                                     <Setter Property="IsEnabled" Value="False"/>
