@@ -8,32 +8,18 @@
   <updated>2023-11-16T00:00:00Z</updated>
 
   <entry>
-    <id>urn:uuid:D776BB39-92F0-4C80-A57C-468B80DEB086</id>
-    <title>1.1.445 (1.1.445.1)</title>
-    <summary>1.1.445.1</summary>
+    <id>urn:uuid:95ae6989-2ad9-4a62-b2d8-65b9c891cd9f</id>
+    <title>1.1.445.Z (1.1.445.1.Z)</title>
+    <summary>1.1.445.1.Z</summary>
     <link href="" />
-    <updated>2023-11-16T00:00:00Z</updated>
+    <updated>2023-12-22T17:00:00Z</updated>
     <content type="xhtml">
       <div xmlns="http://www.w3.org/1999/xhtml" style="font-family: Arial, Verdana, Helvetica, Sans-Serif;font-size: .8em;">
         <p>
-          <u style="font-size: .9em;">BUGFIX</u>
+          <u style="font-size: .9em;">CHANGES</u>
           <br/>
           <ul>
-            <li>Dino Settings - fix Mutagen Level Boost (Bred)</li>
-          </ul>
-          <u style="font-size: .9em;">CHANGE</u>
-          <br/>
-          <ul>
-            <li>RCON - add player menu options to kick, ban or unban a player</li>
-            <li>Administration - add savegame settings for official backups</li>
-            <li>Administration - add max backup quantity for ark auto saves</li>
-            <li>Server Details - add NewYear Event Settings</li>
-            <li>Rules - change MaxTributeDinos and MaxTributeItems to safer max values</li>
-            <li>Dino Settings - PersonalTamedDinosSaddleStructureCost could be zero</li>
-            <li>pt-BR Translation file updated.</li>
-            <li>ru-RU Translation file updated.</li>
-            <li>tr-TR Translation file updated.</li>
-            <li>zh-CN Translation file updated.</li>
+            <li>Allow exclusive join list write when server is running</li>
           </ul>
         </p>
       </div>

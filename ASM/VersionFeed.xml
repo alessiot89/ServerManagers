@@ -8,6 +8,29 @@
   <updated>2023-11-16T00:00:00Z</updated>
 
   <entry>
+    <id>urn:uuid:95ae6989-2ad9-4a62-b2d8-65b9c891cd9f</id>
+    <title>1.1.445.Z (1.1.445.1.Z)</title>
+    <summary>1.1.445.1.Z</summary>
+    <link href="" />
+    <updated>2023-12-22T17:00:00Z</updated>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml" style="font-family: Arial, Verdana, Helvetica, Sans-Serif;font-size: .8em;">
+        <p>
+          <u style="font-size: .9em;">CHANGES</u>
+          <br/>
+          <ul>
+            <li>Allow exclusive join list write when server is running</li>
+          </ul>
+        </p>
+      </div>
+    </content>
+    <author>
+      <name>Lacoi</name>
+      <email></email>
+    </author>
+  </entry>
+
+  <entry>
     <id>urn:uuid:D776BB39-92F0-4C80-A57C-468B80DEB086</id>
     <title>1.1.445 (1.1.445.1)</title>
     <summary>1.1.445.1</summary>
