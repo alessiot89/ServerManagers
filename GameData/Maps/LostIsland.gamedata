@@ -1,9 +1,9 @@
-﻿{
-	"Application": "ark",
-	"Version": "1.1.1",
-	"Created": "2021-12-16T09:25:00.0000000Z",
-	"Mod": "LostIsland",
-	"Creatures": [
+{
+  "Application": "ark",
+  "Version": "1.1.437",
+  "Created": "2022-10-04T00:00:00.0000000Z",
+  "Mod": "LostIsland",
+  "Creatures": [
 		{
 			"NameTag": "Amargasaurus",
 			"IsSpawnable": true,
@@ -29,7 +29,24 @@
 			"Mod": "LostIsland"
 		}
 	],
-	"Items": [
+  "Engrams": [
+		{
+			"Level": 60,
+			"Points": 30,
+			"IsTekGram": false,
+			"ClassName": "EngramEntry_Saddle_Amarga_C",
+			"Description": "Amargasaurus Saddle",
+			"Mod": "LostIsland"
+		}
+	],
+  "Items": [
+		{
+			"Category": "Armor",
+			"IsHarvestable": false,
+			"ClassName": "PrimalItemArmor_AmargaSaddle_C",
+			"Description": "Amargasaurus Saddle",
+			"Mod": "LostIsland"
+		},
 		{
 			"Category": "Trophy",
 			"IsHarvestable": false,
@@ -59,7 +76,29 @@
 			"Mod": "LostIsland"
 		}
 	],
-	"Inventories": [
+  "SupplyCrates": [
+		{
+			"ClassName": "SupplyCrate_Level45_LostIsland_C",
+			"Description": "SupplyCrate (yellow)",
+			"Mod": "LostIsland"
+		},
+		{
+			"ClassName": "SupplyCrate_Level45_LostIsland_Double_C",
+			"Description": "SupplyCrate (yellow double)",
+			"Mod": "LostIsland"
+		},
+		{
+			"ClassName": "SupplyCrate_Level60_LostIsland_C",
+			"Description": "SupplyCrate (red)",
+			"Mod": "LostIsland"
+		},
+		{
+			"ClassName": "SupplyCrate_Level60_LostIsland_Double_C",
+			"Description": "SupplyCrate (red double)",
+			"Mod": "LostIsland"
+		}
+	],
+  "Inventories": [
 		{
 			"ClassName": "DinoDropInventoryComponent_BossDinopith_Easy_C",
 			"Description": "Boss Inventory - Dinopithecus (Gamma)",
@@ -76,13 +115,11 @@
 			"Mod": "LostIsland"
 		}
 	],
-	"Engrams": [
+	"GameMaps": [
 		{
-			"Level": 60,
-			"Points": 30,
-			"IsTekGram": false,
-			"ClassName": "EngramEntry_Saddle_Amarga_C",
-			"Description": "Amargasaurus Saddle",
+			"IsSotF": false,
+			"ClassName": "LostIsland",
+			"Description": "Lost Island",
 			"Mod": "LostIsland"
 		}
 	]

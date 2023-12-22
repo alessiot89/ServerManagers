@@ -1,7 +1,7 @@
 {
 	"Application": "ark",
-	"Version": "1.1.0",
-	"Created": "2019-08-07T00:00:00.0000000Z",
+	"Version": "1.1.432",
+	"Created": "2022-06-17",
 	"Creatures": [
 		{
 			"NameTag": "Deinonychus",
@@ -33,7 +33,7 @@
 			"Level": 32,
 			"Points": 30,
 			"IsTekGram": false,
-			"ClassName": "EngramEntry_DeinonychusSaddle_C",
+			"ClassName": "EngramEntry_Saddle_Deinonychus_C",
 			"Description": "Deinonychus Saddle",
 			"Mod": "Valguero"
 		}
@@ -223,6 +223,14 @@
 		{
 			"ClassName": "Val_SupplyCrate_Level60_Double_C",
 			"Description": "Red Beacon (Double items)",
+			"Mod": "Valguero"
+		}
+	],
+	"GameMaps": [
+		{
+			"IsSotF": false,
+			"ClassName": "Valguero_P",
+			"Description": "Valguero",
 			"Mod": "Valguero"
 		}
 	]

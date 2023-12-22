@@ -1,7 +1,7 @@
 {
 	"Application": "ark",
-	"Version": "1.1.1",
-	"Created": "2020-06-18T00:00:00.0000000Z",
+	"Version": "1.1.432",
+	"Created": "2022-06-17",
 	"Creatures": [
 		{
 			"NameTag": "Bee",
@@ -364,6 +364,14 @@
 		{
 			"ClassName": "DinoDropInventoryComponent_Carnivore_Large_CrystalWyvern_C",
 			"Description": "Creature Inventory - Crystal Wyvern",
+			"Mod": "CrystalIsles"
+		}
+	],
+	"GameMaps": [
+		{
+			"IsSotF": false,
+			"ClassName": "CrystalIsles",
+			"Description": "Crystal Isles",
 			"Mod": "CrystalIsles"
 		}
 	]

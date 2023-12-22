@@ -1,7 +1,7 @@
 {
 	"Application": "ark",
-	"Version": "2.1.7",
-	"Created": "2021-12-14T05:17:00.0000000Z",
+	"Version": "1.1.432",
+	"Created": "2022-06-17",
 	"Mod": "Genesis2",
 	"Creatures": [
 		{
@@ -10,6 +10,14 @@
 			"IsTameable": "True",
 			"ClassName": "MilkGlider_Character_BP_C",
 			"Description": "Maewing",
+			"Mod": "Genesis2"
+		},
+		{
+			"NameTag": "R-Direbear",
+			"IsSpawnable": true,
+			"IsTameable": "True",
+			"ClassName": "Direbear_Character_BP_Rockwell_C",
+			"Description": "R-Direbear",
 			"Mod": "Genesis2"
 		},
 		{
@@ -2194,6 +2202,14 @@
 		{
 			"ClassName": "SupplyCrate_Space_08_BlackPearls_C",
 			"Description": "SupplyCrate (orange)",
+			"Mod": "Genesis2"
+		}
+	],
+	"GameMaps": [
+		{
+			"IsSotF": false,
+			"ClassName": "Gen2",
+			"Description": "Genesis: Part 2",
 			"Mod": "Genesis2"
 		}
 	]
