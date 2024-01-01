@@ -164,7 +164,7 @@ namespace ServerManagerTool.Lib
                     if (!string.IsNullOrWhiteSpace(Config.Default.ServerBackup_WorldSaveMessage))
                     {
                         ProcessAlert(AlertType.Backup, Config.Default.ServerBackup_WorldSaveMessage);
-                        sent = SendMessage(Config.Default.RCON_BackupMessageCommand, Config.Default.ServerBackup_WorldSaveMessage, cancellationToken);
+                        sent = SendMessage(Config.Default.RCON_BackupMessageCommand, Config.Default.ServerBackup_WorldSaveMessage, cancellationToken, true);
                         if (sent)
                         {
                             emailMessage.AppendLine("sent server save message.");
@@ -2862,9 +2862,9 @@ namespace ServerManagerTool.Lib
             return SendMessage(Config.Default.RCON_MessageCommand, message, token);
         }
 
-        private bool SendMessage(string mode, string message, CancellationToken token)
+        private bool SendMessage(string mode, string message, CancellationToken token, bool isAutoBackup = false )
         {
-            if (string.IsNullOrWhiteSpace(message) || !SendShutdownMessages)
+            if (string.IsNullOrWhiteSpace(message) || (!isAutoBackup && !SendShutdownMessages))
                 return false;
 
             var sent = SendCommand($"{GetRconMessageCommand(mode)} {message}", token);
