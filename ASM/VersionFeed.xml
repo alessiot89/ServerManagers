@@ -8,6 +8,29 @@
     <updated>2023-11-16T00:00:00Z</updated>
 
     <entry>
+        <id>urn:uuid:faa618e8-bcfa-41b2-b764-e675636a2392</id>
+        <title>2.1.445 (2.1.445.4)</title>
+        <summary>2.1.445.4</summary>
+        <link href="" />
+        <updated>2024-01-01T15:30:00Z</updated>
+        <content type="xhtml">
+            <div xmlns="http://www.w3.org/1999/xhtml" style="font-family: Arial, Verdana, Helvetica, Sans-Serif;font-size: .8em;">
+                <p>
+                    <u style="font-size: .9em;">CHANGES</u>
+                    <br/>
+                    <ul>
+                        <li>Auto-backups alerts will be correctly displayed even if shutdown alerts are disabled.</li>
+                    </ul>
+                </p>
+            </div>
+        </content>
+        <author>
+            <name>Alessio</name>
+            <email></email>
+        </author>
+    </entry>
+
+    <entry>
         <id>urn:uuid:95ae6989-2ad9-4a62-b2d8-65b9c891cd9f</id>
         <title>2.1.445 (2.1.445.3)</title>
         <summary>2.1.445.3</summary>
