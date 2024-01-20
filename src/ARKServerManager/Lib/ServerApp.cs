@@ -164,7 +164,7 @@ namespace ServerManagerTool.Lib
                     if (!string.IsNullOrWhiteSpace(Config.Default.ServerBackup_WorldSaveMessage))
                     {
                         ProcessAlert(AlertType.Backup, Config.Default.ServerBackup_WorldSaveMessage);
-                        sent = SendMessage(Config.Default.RCON_BackupMessageCommand, Config.Default.ServerBackup_WorldSaveMessage, cancellationToken, true);
+                        sent = SendMessage(Config.Default.RCON_BackupMessageCommand, Config.Default.ServerBackup_WorldSaveMessage, cancellationToken);
                         if (sent)
                         {
                             emailMessage.AppendLine("sent server save message.");
