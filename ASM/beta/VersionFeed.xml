@@ -1,25 +1,31 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-    <id>urn:uuid:ED89B8FA-0E0B-46CC-A90B-595E69AE9A7E</id>
-    <title>Ark Server Manager Version Feed</title>
-    <subtitle>This is the Ark Server Manager beta version feed.</subtitle>
-    <link href="https://arkservermanager.freeforums.net/" />
-    <updated>2023-11-16T00:00:00Z</updated>
+  <id>urn:uuid:ED89B8FA-0E0B-46CC-A90B-595E69AE9A7E</id>
+  <title>Ark Server Manager Version Feed</title>
+  <subtitle>This is the Ark Server Manager beta version feed.</subtitle>
+  <link href="https://arkservermanager.freeforums.net/" />
+    <updated>2024-01-20T00:00:00Z</updated>
 
     <entry>
-        <id>urn:uuid:faa618e8-bcfa-41b2-b764-e675636a2392</id>
-        <title>2.1.445 (2.1.445.4)</title>
-        <summary>2.1.445.4</summary>
+        <id>urn:uuid:d4fad1b7-eb8e-4aca-88ae-265b686e1099</id>
+        <title>2.1.446 (2.1.446.1)</title>
+        <summary>2.1.446.1</summary>
         <link href="" />
-        <updated>2024-01-01T15:30:00Z</updated>
+        <updated>2024-01-20T00:00:00Z</updated>
         <content type="xhtml">
             <div xmlns="http://www.w3.org/1999/xhtml" style="font-family: Arial, Verdana, Helvetica, Sans-Serif;font-size: .8em;">
                 <p>
-                    <u style="font-size: .9em;">CHANGES</u>
+                    <u style="font-size: .9em;">BUGFIX</u>
                     <br/>
                     <ul>
-                        <li>Auto-backups alerts will be correctly displayed even if shutdown alerts are disabled.</li>
+                        <li>AutoBackup - fix RCON message wasn't send (auto-backups alerts will be correctly displayed even if shutdown alerts are disabled).</li>
+                    </ul>
+                    <u style="font-size: .9em;">CHANGE</u>
+                    <br/>
+                    <ul>
+                        <li>pt-BR Translation file updated.</li>
+                        <li>zh-CN Translation file updated.</li>
                     </ul>
                 </p>
             </div>
