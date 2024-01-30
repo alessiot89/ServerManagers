@@ -1,16 +1,21 @@
-﻿using QueryMaster;
+﻿using Discord;
+using QueryMaster;
 using ServerManagerTool.Common.Enums;
 using ServerManagerTool.Common.Extensions;
+using ServerManagerTool.Common.Model;
 using ServerManagerTool.Common.Utils;
 using ServerManagerTool.DiscordBot.Enums;
 using ServerManagerTool.Enums;
 using ServerManagerTool.Lib;
+using ServerManagerTool.Plugin.Common.Lib;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
+using System.Runtime;
 using System.Threading;
 using System.Threading.Tasks;
+using System.Windows;
 using WPFSharp.Globalizer;
 
 namespace ServerManagerTool.Utils
@@ -24,7 +29,7 @@ namespace ServerManagerTool.Utils
 
         public static bool HasRunningCommands => _currentProfileCommands.Count > 0;
 
-        public static IList<string> HandleDiscordCommand(CommandType commandType, string serverId, string channelId, string profileIdOrAlias, CancellationToken token)
+        public static IList<string> HandleDiscordCommand(CommandType commandType, string serverId, string channelId, string profileIdOrAlias, CancellationToken token, string arkID = null)
         {
             // check if incoming values are valid
             if (string.IsNullOrWhiteSpace(serverId) || string.IsNullOrWhiteSpace(channelId))
@@ -72,6 +77,19 @@ namespace ServerManagerTool.Utils
                     case CommandType.Update:
                         if (Config.Default.AllowDiscordUpdate)
                             return UpdateServer(channelId, profileIdOrAlias, token);
+                        return new List<string> { string.Format(_globalizer.GetResourceString("DiscordBot_CommandNotEnabled"), commandType) };
+
+                    case CommandType.AddId:
+                        if (Config.Default.AllowDiscordAddId)
+                            return AddId(channelId, profileIdOrAlias, arkID, token);
+                        return new List<string> { string.Format(_globalizer.GetResourceString("DiscordBot_CommandNotEnabled"), commandType) };
+                    case CommandType.RemoveId:
+                        if (Config.Default.AllowDiscordRemoveId)
+                            return RemoveId(channelId, profileIdOrAlias, arkID, token);
+                        return new List<string> { string.Format(_globalizer.GetResourceString("DiscordBot_CommandNotEnabled"), commandType) };
+                    case CommandType.CheckId:
+                        if (Config.Default.AllowDiscordCheckId)
+                            return CheckId(channelId, profileIdOrAlias, arkID, token);
                         return new List<string> { string.Format(_globalizer.GetResourceString("DiscordBot_CommandNotEnabled"), commandType) };
 
                     default:
@@ -193,7 +211,7 @@ namespace ServerManagerTool.Utils
 
             TaskUtils.RunOnUIThreadAsync(() =>
             {
-                var serverList = ServerManager.Instance.Servers.Where(s => 
+                var serverList = ServerManager.Instance.Servers.Where(s =>
                     string.Equals(channelId, s.Profile.DiscordChannelId, StringComparison.OrdinalIgnoreCase)
                 );
 
@@ -229,7 +247,7 @@ namespace ServerManagerTool.Utils
 
             TaskUtils.RunOnUIThreadAsync(() =>
             {
-                var serverList = ServerManager.Instance.Servers.Where(s => 
+                var serverList = ServerManager.Instance.Servers.Where(s =>
                     string.Equals(channelId, s.Profile.DiscordChannelId, StringComparison.OrdinalIgnoreCase)
                     && (
                         string.Equals(profileIdOrAlias, s.Profile.ProfileID, StringComparison.OrdinalIgnoreCase)
@@ -281,7 +299,7 @@ namespace ServerManagerTool.Utils
 
             TaskUtils.RunOnUIThreadAsync(() =>
             {
-                var serverList = ServerManager.Instance.Servers.Where(s => 
+                var serverList = ServerManager.Instance.Servers.Where(s =>
                     string.Equals(channelId, s.Profile.DiscordChannelId, StringComparison.OrdinalIgnoreCase)
                     && (
                         string.Equals(profileIdOrAlias, s.Profile.ProfileID, StringComparison.OrdinalIgnoreCase)
@@ -483,7 +501,7 @@ namespace ServerManagerTool.Utils
 
                 if (restart)
                     responseList.Add(string.Format(_globalizer.GetResourceString("DiscordBot_RestartRequested"), profile.ServerName));
-                else 
+                else
                     responseList.Add(string.Format(_globalizer.GetResourceString("DiscordBot_StartRequested"), profile.ServerName));
             }
 
@@ -711,6 +729,232 @@ namespace ServerManagerTool.Utils
 
                 responseList.Add(string.Format(_globalizer.GetResourceString("DiscordBot_UpdateRequested"), profile.ServerName));
             }
+
+            return responseList;
+        }
+
+        private static IList<string> AddId(string channelId, string profileIdOrAlias, string arkID, CancellationToken token)
+        {
+            if (string.IsNullOrWhiteSpace(profileIdOrAlias))
+            {
+                return new List<string> { string.Format(_globalizer.GetResourceString("DiscordBot_ProfileMissing"), CommandType.AddId) };
+            }
+
+            var responseList = new List<string>();
+
+            TaskUtils.RunOnUIThreadAsync(() =>
+            {
+                var serverList = ServerManager.Instance.Servers.Where(s =>
+                    string.Equals(channelId, s.Profile.DiscordChannelId, StringComparison.OrdinalIgnoreCase)
+                    && (
+                        string.Equals(profileIdOrAlias, s.Profile.ProfileID, StringComparison.OrdinalIgnoreCase)
+                        || !string.IsNullOrWhiteSpace(s.Profile.DiscordAlias) && string.Equals(profileIdOrAlias, s.Profile.DiscordAlias, StringComparison.OrdinalIgnoreCase)
+                        || !string.IsNullOrWhiteSpace(Config.Default.DiscordBotAllServersKeyword) && string.Equals(profileIdOrAlias, Config.Default.DiscordBotAllServersKeyword, StringComparison.OrdinalIgnoreCase)
+                        || s.Profile.AllowDiscordClusterAlias && string.Equals(profileIdOrAlias, s.Profile.CrossArkClusterId, StringComparison.OrdinalIgnoreCase)
+                    )
+                );
+
+                if (serverList.IsEmpty())
+                {
+                    if (!string.IsNullOrWhiteSpace(Config.Default.DiscordBotAllServersKeyword) && string.Equals(profileIdOrAlias, Config.Default.DiscordBotAllServersKeyword, StringComparison.OrdinalIgnoreCase))
+                    {
+                        responseList.Add(_globalizer.GetResourceString("DiscordBot_NoChannelProfiles"));
+                    }
+                    else
+                    {
+                        responseList.Add(string.Format(_globalizer.GetResourceString("DiscordBot_ProfileNotFound"), profileIdOrAlias));
+                    }
+                }
+                else
+                {
+                    foreach (var server in serverList)
+                    {
+                        // check if another command is being run against the profile
+                        if (_currentProfileCommands.ContainsKey(server.Profile.ProfileID))
+                        {
+                            responseList.Add(string.Format(_globalizer.GetResourceString("DiscordBot_CommandRunningProfile"), _currentProfileCommands[server.Profile.ProfileID], server.Profile.ProfileName));
+                            continue;
+                        }
+
+                        _currentProfileCommands.Add(server.Profile.ProfileID, CommandType.AddId);
+
+                        try
+                        {
+                            server.Profile.DestroyServerFilesWatcher();
+                            var arkIDs = arkID.Split(new[] { "\r\n" }, StringSplitOptions.RemoveEmptyEntries);
+                            var arkUsers = SteamUtils.GetSteamUserDetails(arkIDs.ToList());
+                            var arkUserList = PlayerUserList.GetList(arkUsers, arkIDs);
+                            server.Profile.ServerFilesExclusive.AddRange(arkUserList);
+                            server.Profile.SaveServerFileExclusive();
+                            foreach (var ID in arkIDs)
+                            {
+                                responseList.Add("Added ID " + ID + " in server " + server.Profile.DiscordAlias + "\n");
+                            }
+                        }
+                        catch (Exception)
+                        {
+                            responseList.Add(string.Format(_globalizer.GetResourceString("DiscordBot_InfoFailed"), server.Profile.ServerName));
+                        }
+                        finally
+                        {
+                            server.Profile.SetupServerFilesWatcher();
+                        }
+
+                        _currentProfileCommands.Remove(server.Profile.ProfileID);
+                    }
+                }
+            }).Wait(token);
+
+            return responseList;
+        }
+
+        private static IList<string> RemoveId(string channelId, string profileIdOrAlias, string arkID, CancellationToken token)
+        {
+            if (string.IsNullOrWhiteSpace(profileIdOrAlias))
+            {
+                return new List<string> { string.Format(_globalizer.GetResourceString("DiscordBot_ProfileMissing"), CommandType.AddId) };
+            }
+
+            var responseList = new List<string>();
+
+            TaskUtils.RunOnUIThreadAsync(() =>
+            {
+                var serverList = ServerManager.Instance.Servers.Where(s =>
+                    string.Equals(channelId, s.Profile.DiscordChannelId, StringComparison.OrdinalIgnoreCase)
+                    && (
+                        string.Equals(profileIdOrAlias, s.Profile.ProfileID, StringComparison.OrdinalIgnoreCase)
+                        || !string.IsNullOrWhiteSpace(s.Profile.DiscordAlias) && string.Equals(profileIdOrAlias, s.Profile.DiscordAlias, StringComparison.OrdinalIgnoreCase)
+                        || !string.IsNullOrWhiteSpace(Config.Default.DiscordBotAllServersKeyword) && string.Equals(profileIdOrAlias, Config.Default.DiscordBotAllServersKeyword, StringComparison.OrdinalIgnoreCase)
+                        || s.Profile.AllowDiscordClusterAlias && string.Equals(profileIdOrAlias, s.Profile.CrossArkClusterId, StringComparison.OrdinalIgnoreCase)
+                    )
+                );
+
+                if (serverList.IsEmpty())
+                {
+                    if (!string.IsNullOrWhiteSpace(Config.Default.DiscordBotAllServersKeyword) && string.Equals(profileIdOrAlias, Config.Default.DiscordBotAllServersKeyword, StringComparison.OrdinalIgnoreCase))
+                    {
+                        responseList.Add(_globalizer.GetResourceString("DiscordBot_NoChannelProfiles"));
+                    }
+                    else
+                    {
+                        responseList.Add(string.Format(_globalizer.GetResourceString("DiscordBot_ProfileNotFound"), profileIdOrAlias));
+                    }
+                }
+                else
+                {
+                    foreach (var server in serverList)
+                    {
+                        // check if another command is being run against the profile
+                        if (_currentProfileCommands.ContainsKey(server.Profile.ProfileID))
+                        {
+                            responseList.Add(string.Format(_globalizer.GetResourceString("DiscordBot_CommandRunningProfile"), _currentProfileCommands[server.Profile.ProfileID], server.Profile.ProfileName));
+                            continue;
+                        }
+
+                        _currentProfileCommands.Add(server.Profile.ProfileID, CommandType.RemoveId);
+
+                        try
+                        {
+                            server.Profile.DestroyServerFilesWatcher();
+                            var arkIDs = arkID.Split(new[] { "\r\n" }, StringSplitOptions.RemoveEmptyEntries);
+                            var arkUsers = SteamUtils.GetSteamUserDetails(arkIDs.ToList());
+                            var arkUserList = PlayerUserList.GetList(arkUsers, arkIDs);
+                            foreach (var ID in arkUserList)
+                            {
+                                server.Profile.ServerFilesExclusive.Remove(ID.PlayerId);
+                                responseList.Add("Removed ID " + ID.PlayerId + " in server " + server.Profile.DiscordAlias + "\n");
+                            }
+                            server.Profile.SaveServerFileExclusive();
+                        }
+                        catch (Exception)
+                        {
+                            responseList.Add(string.Format(_globalizer.GetResourceString("DiscordBot_InfoFailed"), server.Profile.ServerName));
+                        }
+                        finally
+                        {
+                            server.Profile.SetupServerFilesWatcher();
+                        }
+
+                        _currentProfileCommands.Remove(server.Profile.ProfileID);
+                    }
+                }
+            }).Wait(token);
+
+            return responseList;
+        }
+
+        private static IList<string> CheckId(string channelId, string profileIdOrAlias, string arkID, CancellationToken token)
+        {
+            if (string.IsNullOrWhiteSpace(profileIdOrAlias))
+            {
+                return new List<string> { string.Format(_globalizer.GetResourceString("DiscordBot_ProfileMissing"), CommandType.CheckId) };
+            }
+
+            var responseList = new List<string>();
+
+            TaskUtils.RunOnUIThreadAsync(() =>
+            {
+                var serverList = ServerManager.Instance.Servers.Where(s =>
+                    string.Equals(channelId, s.Profile.DiscordChannelId, StringComparison.OrdinalIgnoreCase)
+                    && (
+                        string.Equals(profileIdOrAlias, s.Profile.ProfileID, StringComparison.OrdinalIgnoreCase)
+                        || !string.IsNullOrWhiteSpace(s.Profile.DiscordAlias) && string.Equals(profileIdOrAlias, s.Profile.DiscordAlias, StringComparison.OrdinalIgnoreCase)
+                        || !string.IsNullOrWhiteSpace(Config.Default.DiscordBotAllServersKeyword) && string.Equals(profileIdOrAlias, Config.Default.DiscordBotAllServersKeyword, StringComparison.OrdinalIgnoreCase)
+                        || s.Profile.AllowDiscordClusterAlias && string.Equals(profileIdOrAlias, s.Profile.CrossArkClusterId, StringComparison.OrdinalIgnoreCase)
+                    )
+                );
+
+                if (serverList.IsEmpty())
+                {
+                    if (!string.IsNullOrWhiteSpace(Config.Default.DiscordBotAllServersKeyword) && string.Equals(profileIdOrAlias, Config.Default.DiscordBotAllServersKeyword, StringComparison.OrdinalIgnoreCase))
+                    {
+                        responseList.Add(_globalizer.GetResourceString("DiscordBot_NoChannelProfiles"));
+                    }
+                    else
+                    {
+                        responseList.Add(string.Format(_globalizer.GetResourceString("DiscordBot_ProfileNotFound"), profileIdOrAlias));
+                    }
+                }
+                else
+                {
+                    foreach (var server in serverList)
+                    {
+                        // check if another command is being run against the profile
+                        if (_currentProfileCommands.ContainsKey(server.Profile.ProfileID))
+                        {
+                            responseList.Add(string.Format(_globalizer.GetResourceString("DiscordBot_CommandRunningProfile"), _currentProfileCommands[server.Profile.ProfileID], server.Profile.ProfileName));
+                            continue;
+                        }
+
+                        _currentProfileCommands.Add(server.Profile.ProfileID, CommandType.CheckId);
+
+                        try
+                        {
+                            server.Profile.DestroyServerFilesWatcher();
+                            var arkIDs = arkID.Split(new[] { "\r\n" }, StringSplitOptions.RemoveEmptyEntries);
+                            var arkUsers = SteamUtils.GetSteamUserDetails(arkIDs.ToList());
+                            var arkUserList = PlayerUserList.GetList(arkUsers, arkIDs);
+                            foreach ( var ID in arkUserList )
+                            {
+                                if (string.IsNullOrWhiteSpace(ID?.PlayerId))
+                                    continue;
+                                if (server.Profile.ServerFilesExclusive.Any(i => i.PlayerId.Equals(ID.PlayerId)))
+                                    responseList.Add("ID " + ID.PlayerId + " already in list of server " + server.Profile.DiscordAlias + "\n");
+                            }
+                        }
+                        catch (Exception)
+                        {
+                            responseList.Add(string.Format(_globalizer.GetResourceString("DiscordBot_InfoFailed"), server.Profile.ServerName));
+                        }
+                        finally
+                        {
+                            server.Profile.SetupServerFilesWatcher();
+                        }
+
+                        _currentProfileCommands.Remove(server.Profile.ProfileID);
+                    }
+                }
+            }).Wait(token);
 
             return responseList;
         }

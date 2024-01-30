@@ -1146,6 +1146,30 @@ namespace ServerManagerTool.Lib
             get { return (bool)GetValue(AllowDiscordUpdateProperty); }
             set { SetValue(AllowDiscordUpdateProperty, value); }
         }
+
+        public static readonly DependencyProperty AllowDiscordAddIdProperty = DependencyProperty.Register(nameof(AllowDiscordAddId), typeof(bool), typeof(ServerProfile), new PropertyMetadata(true));
+        [DataMember]
+        public bool AllowDiscordAddId
+        {
+            get { return (bool)GetValue(AllowDiscordAddIdProperty); }
+            set { SetValue(AllowDiscordAddIdProperty, value); }
+        }
+
+        public static readonly DependencyProperty AllowDiscordRemoveIdProperty = DependencyProperty.Register(nameof(AllowDiscordRemoveId), typeof(bool), typeof(ServerProfile), new PropertyMetadata(true));
+        [DataMember]
+        public bool AllowDiscordRemoveId
+        {
+            get { return (bool)GetValue(AllowDiscordRemoveIdProperty); }
+            set { SetValue(AllowDiscordRemoveIdProperty, value); }
+        }
+
+        public static readonly DependencyProperty AllowDiscordCheckIdProperty = DependencyProperty.Register(nameof(AllowDiscordCheckId), typeof(bool), typeof(ServerProfile), new PropertyMetadata(true));
+        [DataMember]
+        public bool AllowDiscordCheckId
+        {
+            get { return (bool)GetValue(AllowDiscordCheckIdProperty); }
+            set { SetValue(AllowDiscordCheckIdProperty, value); }
+        }
         #endregion
 
         #region Server Details
@@ -5845,6 +5869,9 @@ namespace ServerManagerTool.Lib
             this.ClearValue(AllowDiscordStartProperty);
             this.ClearValue(AllowDiscordStopProperty);
             this.ClearValue(AllowDiscordUpdateProperty);
+            this.ClearValue(AllowDiscordAddIdProperty);
+            this.ClearValue(AllowDiscordRemoveIdProperty);
+            this.ClearValue(AllowDiscordCheckIdProperty);
         }
 
         public void ResetEngramsSection()
@@ -6604,6 +6631,10 @@ namespace ServerManagerTool.Lib
             this.SetValue(AllowDiscordStartProperty, sourceProfile.AllowDiscordStart);
             this.SetValue(AllowDiscordStopProperty, sourceProfile.AllowDiscordStop);
             this.SetValue(AllowDiscordUpdateProperty, sourceProfile.AllowDiscordUpdate);
+
+            this.SetValue(AllowDiscordAddIdProperty, sourceProfile.AllowDiscordAddId);
+            this.SetValue(AllowDiscordRemoveIdProperty, sourceProfile.AllowDiscordRemoveId);
+            this.SetValue(AllowDiscordCheckIdProperty, sourceProfile.AllowDiscordCheckId);
         }
 
         private void SyncEngramsSection(ServerProfile sourceProfile)

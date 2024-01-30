@@ -1638,6 +1638,7 @@
                                     <RowDefinition Height="Auto"/>
                                     <RowDefinition Height="Auto"/>
                                     <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
                                 </Grid.RowDefinitions>
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition Width="Auto" MinWidth="100"/>
@@ -1678,6 +1679,10 @@
                                 <cctl:CheckBoxAndTextBlock Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" Margin="5" IsChecked="{Binding AllowDiscordRestart, Mode=TwoWay}" Text="{DynamicResource ServerSettings_AllowDiscordRestartLabel}" HorizontalAlignment="Left" ToolTip="{DynamicResource ServerSettings_AllowDiscordRestartTooltip}"/>
                                 <cctl:CheckBoxAndTextBlock Grid.Row="2" Grid.Column="2" Grid.ColumnSpan="2" Margin="5" IsChecked="{Binding AllowDiscordShutdown, Mode=TwoWay}" Text="{DynamicResource ServerSettings_AllowDiscordShutdownLabel}" HorizontalAlignment="Left" ToolTip="{DynamicResource ServerSettings_AllowDiscordShutdownTooltip}"/>
                                 <cctl:CheckBoxAndTextBlock Grid.Row="2" Grid.Column="4" Grid.ColumnSpan="2" Margin="5" IsChecked="{Binding AllowDiscordStop, Mode=TwoWay}" Text="{DynamicResource ServerSettings_AllowDiscordStopLabel}" HorizontalAlignment="Left" ToolTip="{DynamicResource ServerSettings_AllowDiscordStopTooltip}"/>
+
+                                <cctl:CheckBoxAndTextBlock Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" Margin="5,10,5,10" IsChecked="{Binding AllowDiscordAddId, Mode=TwoWay}" Text="{DynamicResource ServerSettings_AllowDiscordAddIdLabel}" HorizontalAlignment="Left" ToolTip="{DynamicResource ServerSettings_AllowDiscordAddIdTooltip}"/>
+                                <cctl:CheckBoxAndTextBlock Grid.Row="3" Grid.Column="2" Grid.ColumnSpan="2" Margin="5,10,5,10" IsChecked="{Binding AllowDiscordRemoveId, Mode=TwoWay}" Text="{DynamicResource ServerSettings_AllowDiscordRemoveIdLabel}" HorizontalAlignment="Left" ToolTip="{DynamicResource ServerSettings_AllowDiscordRemoveIdTooltip}"/>
+                                <cctl:CheckBoxAndTextBlock Grid.Row="3" Grid.Column="4" Grid.ColumnSpan="2" Margin="5,10,5,10" IsChecked="{Binding AllowDiscordCheckId, Mode=TwoWay}" Text="{DynamicResource ServerSettings_AllowDiscordCheckIdLabel}" HorizontalAlignment="Left" ToolTip="{DynamicResource ServerSettings_AllowDiscordCheckIdTooltip}"/>
                             </Grid>
                         </Expander>
 

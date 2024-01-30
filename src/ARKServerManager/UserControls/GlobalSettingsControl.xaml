@@ -701,7 +701,11 @@
                         <CheckBox Grid.Row="5" Grid.Column="4" Margin="0,5,0,5" IsChecked="{Binding Config.AllowDiscordShutdown}" Content="{DynamicResource ServerSettings_AllowDiscordShutdownLabel}" HorizontalAlignment="Left" ToolTip="{DynamicResource GlobalSettings_DiscordBotAllowShutdownTooltip}"/>
                         <CheckBox Grid.Row="5" Grid.Column="7" Margin="0,5,0,5" IsChecked="{Binding Config.AllowDiscordStop}" Content="{DynamicResource ServerSettings_AllowDiscordStopLabel}" HorizontalAlignment="Left" ToolTip="{DynamicResource GlobalSettings_DiscordBotAllowStopTooltip}"/>
 
-                        <GroupBox Grid.Row="6" Grid.Column="3" Grid.RowSpan="3" Grid.ColumnSpan="3" HorizontalAlignment="Stretch" MinHeight="200" IsEnabled="{Binding Config.DiscordBotAllowAllBots, Converter={StaticResource InvertBooleanConverter}}">
+                        <CheckBox Grid.Row="6" Grid.Column="1" Margin="0,15,0,15" IsChecked="{Binding Config.AllowDiscordAddId}" Content="{DynamicResource ServerSettings_AllowDiscordAddIdLabel}" HorizontalAlignment="Left" ToolTip="{DynamicResource GlobalSettings_DiscordBotAllowDiscordAddIdTooltip}"/>
+                        <CheckBox Grid.Row="6" Grid.Column="4" Margin="0,15,0,15" IsChecked="{Binding Config.AllowDiscordRemoveId}" Content="{DynamicResource ServerSettings_AllowDiscordRemoveIdLabel}" HorizontalAlignment="Left" ToolTip="{DynamicResource GlobalSettings_DiscordBotAllowDiscordRemoveIdTooltip}"/>
+                        <CheckBox Grid.Row="6" Grid.Column="7" Margin="0,15,0,15" IsChecked="{Binding Config.AllowDiscordCheckId}" Content="{DynamicResource ServerSettings_AllowDiscordCheckIdLabel}" HorizontalAlignment="Left" ToolTip="{DynamicResource GlobalSettings_DiscordBotAllowDiscordCheckIdTooltip}"/>
+
+                        <GroupBox Grid.Row="7" Grid.Column="3" Grid.RowSpan="3" Grid.ColumnSpan="3" HorizontalAlignment="Stretch" MinHeight="200" IsEnabled="{Binding Config.DiscordBotAllowAllBots, Converter={StaticResource InvertBooleanConverter}}">
                             <GroupBox.Header>
                                 <StackPanel Orientation="Horizontal">
                                     <Label Content="{DynamicResource GlobalSettings_DiscordBotWhitelistLabel}"/>

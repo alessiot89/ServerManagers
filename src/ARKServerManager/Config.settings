@@ -782,6 +782,15 @@
     <Setting Name="AllowDiscordStop" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">True</Value>
     </Setting>
+    <Setting Name="AllowDiscordAddId" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="AllowDiscordRemoveId" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="AllowDiscordCheckId" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
     <Setting Name="ServerMonitorWindow_Left" Type="System.Double" Scope="User">
       <Value Profile="(Default)">50</Value>
     </Setting>

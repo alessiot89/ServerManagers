@@ -8,24 +8,18 @@
     <updated>2024-01-20T00:00:00Z</updated>
 
     <entry>
-        <id>urn:uuid:d4fad1b7-eb8e-4aca-88ae-265b686e1099</id>
-        <title>2.1.446 (2.1.446.1)</title>
-        <summary>2.1.446.1</summary>
+        <id>urn:uuid:b4f650da-ce08-497d-ae01-33326e72ab42</id>
+        <title>2.1.447 (2.1.447.1)</title>
+        <summary>2.1.447.1</summary>
         <link href="" />
-        <updated>2024-01-20T00:00:00Z</updated>
+        <updated>2024-01-30T00:00:00Z</updated>
         <content type="xhtml">
             <div xmlns="http://www.w3.org/1999/xhtml" style="font-family: Arial, Verdana, Helvetica, Sans-Serif;font-size: .8em;">
                 <p>
-                    <u style="font-size: .9em;">BUGFIX</u>
+                    <u style="font-size: .9em;">NEW</u>
                     <br/>
                     <ul>
-                        <li>AutoBackup - fix RCON message wasn't send (auto-backups alerts will be correctly displayed even if shutdown alerts are disabled).</li>
-                    </ul>
-                    <u style="font-size: .9em;">CHANGE</u>
-                    <br/>
-                    <ul>
-                        <li>pt-BR Translation file updated.</li>
-                        <li>zh-CN Translation file updated.</li>
+                        <li>Discord - exclusive join commands.</li>
                     </ul>
                 </p>
             </div>

@@ -12,7 +12,7 @@ namespace ServerManagerTool {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "17.2.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "17.8.0.0")]
     public sealed partial class Config : global::System.Configuration.ApplicationSettingsBase {
         
         private static Config defaultInstance = ((Config)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Config())));
@@ -819,9 +819,9 @@ namespace ServerManagerTool {
             }
             set {
                 this["SteamCmdIgnoreExitStatusCodes"] = value;
-            }
         }
-
+        }
+        
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("True")]
@@ -1370,7 +1370,7 @@ namespace ServerManagerTool {
                 this["SectionSupplyCrateOverridesIsExpanded"] = value;
             }
         }
-
+        
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("False")]
@@ -1454,13 +1454,13 @@ namespace ServerManagerTool {
             get
             {
                 return ((int)(this["AutoBackup_SequencialDelayPeriod"]));
-            }
+        }
             set
             {
                 this["AutoBackup_SequencialDelayPeriod"] = value;
             }
         }
-
+        
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("False")]
@@ -1608,7 +1608,7 @@ namespace ServerManagerTool {
                 this["SectionSupplyCrateOverridesEnabled"] = value;
             }
         }
-
+        
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("True")]
@@ -2582,7 +2582,7 @@ namespace ServerManagerTool {
                 this["SupplyCrateItemsGridHeight"] = value;
             }
         }
-
+        
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("200")]
@@ -2934,6 +2934,42 @@ namespace ServerManagerTool {
             }
             set {
                 this["AllowDiscordStop"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool AllowDiscordAddId {
+            get {
+                return ((bool)(this["AllowDiscordAddId"]));
+            }
+            set {
+                this["AllowDiscordAddId"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool AllowDiscordRemoveId {
+            get {
+                return ((bool)(this["AllowDiscordRemoveId"]));
+            }
+            set {
+                this["AllowDiscordRemoveId"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool AllowDiscordCheckId {
+            get {
+                return ((bool)(this["AllowDiscordCheckId"]));
+            }
+            set {
+                this["AllowDiscordCheckId"] = value;
             }
         }
         
