@@ -1,5 +1,4 @@
-﻿using Discord;
-using QueryMaster;
+﻿using QueryMaster;
 using ServerManagerTool.Common.Enums;
 using ServerManagerTool.Common.Extensions;
 using ServerManagerTool.Common.Model;
@@ -7,15 +6,12 @@ using ServerManagerTool.Common.Utils;
 using ServerManagerTool.DiscordBot.Enums;
 using ServerManagerTool.Enums;
 using ServerManagerTool.Lib;
-using ServerManagerTool.Plugin.Common.Lib;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
-using System.Runtime;
 using System.Threading;
 using System.Threading.Tasks;
-using System.Windows;
 using WPFSharp.Globalizer;
 
 namespace ServerManagerTool.Utils
