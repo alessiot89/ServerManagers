@@ -765,6 +765,12 @@ namespace ServerManagerTool.Utils
                 {
                     foreach (var server in serverList)
                     {
+                        if (!server.Profile.AllowDiscordAddId)
+                        {
+                            responseList.Add(string.Format(_globalizer.GetResourceString("DiscordBot_CommandDisabledProfile"), CommandType.Update, server.Profile.ProfileName));
+                            continue;
+                        }
+
                         // check if another command is being run against the profile
                         if (_currentProfileCommands.ContainsKey(server.Profile.ProfileID))
                         {
@@ -840,6 +846,12 @@ namespace ServerManagerTool.Utils
                 {
                     foreach (var server in serverList)
                     {
+                        if (!server.Profile.AllowDiscordRemoveId)
+                        {
+                            responseList.Add(string.Format(_globalizer.GetResourceString("DiscordBot_CommandDisabledProfile"), CommandType.Update, server.Profile.ProfileName));
+                            continue;
+                        }
+
                         // check if another command is being run against the profile
                         if (_currentProfileCommands.ContainsKey(server.Profile.ProfileID))
                         {
@@ -915,6 +927,12 @@ namespace ServerManagerTool.Utils
                 {
                     foreach (var server in serverList)
                     {
+                        if (!server.Profile.AllowDiscordCheckId)
+                        {
+                            responseList.Add(string.Format(_globalizer.GetResourceString("DiscordBot_CommandDisabledProfile"), CommandType.Update, server.Profile.ProfileName));
+                            continue;
+                        }
+
                         // check if another command is being run against the profile
                         if (_currentProfileCommands.ContainsKey(server.Profile.ProfileID))
                         {
