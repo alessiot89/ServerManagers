@@ -788,7 +788,7 @@ namespace ServerManagerTool.Utils
                             server.Profile.SaveServerFileExclusive();
                             foreach (var ID in arkIDs)
                             {
-                                responseList.Add("Added ID " + ID + " in server " + server.Profile.DiscordAlias + "\n");
+                                responseList.Add("ID " + ID + " added in " + server.Profile.DiscordAlias + " list\n");
                             }
                         }
                         catch (Exception)
@@ -862,7 +862,7 @@ namespace ServerManagerTool.Utils
                             foreach (var ID in arkUserList)
                             {
                                 server.Profile.ServerFilesExclusive.Remove(ID.PlayerId);
-                                responseList.Add("Removed ID " + ID.PlayerId + " in server " + server.Profile.DiscordAlias + "\n");
+                                responseList.Add("ID " + ID.PlayerId + " removed from " + server.Profile.DiscordAlias + " list\n");
                             }
                             server.Profile.SaveServerFileExclusive();
                         }
@@ -939,7 +939,7 @@ namespace ServerManagerTool.Utils
                                 if (string.IsNullOrWhiteSpace(ID?.PlayerId))
                                     continue;
                                 if (server.Profile.ServerFilesExclusive.Any(i => i.PlayerId.Equals(ID.PlayerId)))
-                                    responseList.Add("ID " + ID.PlayerId + " already in list of server " + server.Profile.DiscordAlias + "\n");
+                                    responseList.Add("ID " + ID.PlayerId + " already in " + server.Profile.DiscordAlias + " list\n");
                             }
                         }
                         catch (Exception)
