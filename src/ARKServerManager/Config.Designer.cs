@@ -808,18 +808,6 @@ namespace ServerManagerTool {
                 this["SteamCmdRedirectOutput"] = value;
             }
         }
-
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string SteamCmdIgnoreExitStatusCodes {
-            get {
-                return ((string)(this["SteamCmdIgnoreExitStatusCodes"]));
-            }
-            set {
-                this["SteamCmdIgnoreExitStatusCodes"] = value;
-            }
-        }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1370,18 +1358,6 @@ namespace ServerManagerTool {
             }
         }
         
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("False")]
-        public bool SectionExcludeItemIndicesOverridesIsExpanded {
-            get {
-                return ((bool)(this["SectionExcludeItemIndicesOverridesIsExpanded"]));
-            }
-            set {
-                this["SectionExcludeItemIndicesOverridesIsExpanded"] = value;
-            }
-        }
-
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("https://steamcommunity.com/dev/apikey")]
@@ -1424,30 +1400,6 @@ namespace ServerManagerTool {
             }
             set {
                 this["AutoBackup_BackupPeriod"] = value;
-            }
-        }
-
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("True")]
-        public bool AutoBackup_ParallelBackup {
-            get {
-                return ((bool)(this["AutoBackup_ParallelBackup"]));
-            }
-            set {
-                this["AutoBackup_ParallelBackup"] = value;
-            }
-        }
-
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("10")]
-        public int AutoBackup_SequencialDelayPeriod {
-            get {
-                return ((int)(this["AutoBackup_SequencialDelayPeriod"]));
-            }
-            set {
-                this["AutoBackup_SequencialDelayPeriod"] = value;
             }
         }
         
@@ -1599,18 +1551,6 @@ namespace ServerManagerTool {
             }
         }
         
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("True")]
-        public bool SectionExcludeItemIndicesOverridesEnabled {
-            get {
-                return ((bool)(this["SectionExcludeItemIndicesOverridesEnabled"]));
-            }
-            set {
-                this["SectionExcludeItemIndicesOverridesEnabled"] = value;
-            }
-        }
-
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("True")]
@@ -2572,18 +2512,6 @@ namespace ServerManagerTool {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("200")]
-        public global::System.Windows.GridLength ExcludeItemIndicesOverrideGridHeight {
-            get {
-                return ((global::System.Windows.GridLength)(this["ExcludeItemIndicesOverrideGridHeight"]));
-            }
-            set {
-                this["ExcludeItemIndicesOverrideGridHeight"] = value;
-            }
-        }
-
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("400")]
         public global::System.Windows.GridLength NPCSpawnSettingsGridHeight {
             get {
@@ -3321,49 +3249,112 @@ namespace ServerManagerTool {
                 this["TaskSchedulerPassword"] = value;
             }
         }
-
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool AutoBackup_ParallelBackup {
+            get {
+                return ((bool)(this["AutoBackup_ParallelBackup"]));
+            }
+            set {
+                this["AutoBackup_ParallelBackup"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("10")]
+        public int AutoBackup_SequencialDelayPeriod {
+            get {
+                return ((int)(this["AutoBackup_SequencialDelayPeriod"]));
+            }
+            set {
+                this["AutoBackup_SequencialDelayPeriod"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string SteamCmdIgnoreExitStatusCodes {
+            get {
+                return ((string)(this["SteamCmdIgnoreExitStatusCodes"]));
+            }
+            set {
+                this["SteamCmdIgnoreExitStatusCodes"] = value;
+            }
+        }
+        
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("False")]
-        public bool ProfileSyncServerModIdsEnabled
-        {
-            get
-            {
+        public bool ProfileSyncServerModIdsEnabled {
+            get {
                 return ((bool)(this["ProfileSyncServerModIdsEnabled"]));
             }
-            set
-            {
+            set {
                 this["ProfileSyncServerModIdsEnabled"] = value;
             }
         }
-
+        
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("False")]
-        public bool ProfileSyncCrossArkClusterIdEnabled
-        {
-            get
-            {
+        public bool ProfileSyncCrossArkClusterIdEnabled {
+            get {
                 return ((bool)(this["ProfileSyncCrossArkClusterIdEnabled"]));
             }
-            set
-            {
+            set {
                 this["ProfileSyncCrossArkClusterIdEnabled"] = value;
             }
         }
-
+        
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("False")]
-        public bool ProfileSyncAutoShutdownEnabled
-        {
-            get
-            {
+        public bool ProfileSyncAutoShutdownEnabled {
+            get {
                 return ((bool)(this["ProfileSyncAutoShutdownEnabled"]));
             }
-            set
-            {
+            set {
                 this["ProfileSyncAutoShutdownEnabled"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool SectionExcludeItemIndicesOverridesIsExpanded {
+            get {
+                return ((bool)(this["SectionExcludeItemIndicesOverridesIsExpanded"]));
+            }
+            set {
+                this["SectionExcludeItemIndicesOverridesIsExpanded"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool SectionExcludeItemIndicesOverridesEnabled {
+            get {
+                return ((bool)(this["SectionExcludeItemIndicesOverridesEnabled"]));
+            }
+            set {
+                this["SectionExcludeItemIndicesOverridesEnabled"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("200")]
+        public global::System.Windows.GridLength ExcludeItemIndicesOverrideGridHeight {
+            get {
+                return ((global::System.Windows.GridLength)(this["ExcludeItemIndicesOverrideGridHeight"]));
+            }
+            set {
+                this["ExcludeItemIndicesOverrideGridHeight"] = value;
             }
         }
     }
