@@ -1373,14 +1373,11 @@ namespace ServerManagerTool {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("False")]
-        public bool SectionExcludeItemIndicesOverridesIsExpanded
-        {
-            get
-            {
+        public bool SectionExcludeItemIndicesOverridesIsExpanded {
+            get {
                 return ((bool)(this["SectionExcludeItemIndicesOverridesIsExpanded"]));
             }
-            set
-            {
+            set {
                 this["SectionExcludeItemIndicesOverridesIsExpanded"] = value;
             }
         }
@@ -1433,14 +1430,11 @@ namespace ServerManagerTool {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("True")]
-        public bool AutoBackup_ParallelBackup
-        {
-            get
-            {
+        public bool AutoBackup_ParallelBackup {
+            get {
                 return ((bool)(this["AutoBackup_ParallelBackup"]));
             }
-            set
-            {
+            set {
                 this["AutoBackup_ParallelBackup"] = value;
             }
         }
@@ -1448,14 +1442,11 @@ namespace ServerManagerTool {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("10")]
-        public int AutoBackup_SequencialDelayPeriod
-        {
-            get
-            {
+        public int AutoBackup_SequencialDelayPeriod {
+            get {
                 return ((int)(this["AutoBackup_SequencialDelayPeriod"]));
-        }
-            set
-            {
+            }
+            set {
                 this["AutoBackup_SequencialDelayPeriod"] = value;
             }
         }
@@ -1611,14 +1602,11 @@ namespace ServerManagerTool {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("True")]
-        public bool SectionExcludeItemIndicesOverridesEnabled
-        {
-            get
-            {
+        public bool SectionExcludeItemIndicesOverridesEnabled {
+            get {
                 return ((bool)(this["SectionExcludeItemIndicesOverridesEnabled"]));
             }
-            set
-            {
+            set {
                 this["SectionExcludeItemIndicesOverridesEnabled"] = value;
             }
         }
@@ -2585,14 +2573,11 @@ namespace ServerManagerTool {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("200")]
-        public global::System.Windows.GridLength ExcludeItemIndicesOverrideGridHeight
-        {
-            get
-            {
+        public global::System.Windows.GridLength ExcludeItemIndicesOverrideGridHeight {
+            get {
                 return ((global::System.Windows.GridLength)(this["ExcludeItemIndicesOverrideGridHeight"]));
             }
-            set
-            {
+            set {
                 this["ExcludeItemIndicesOverrideGridHeight"] = value;
             }
         }
