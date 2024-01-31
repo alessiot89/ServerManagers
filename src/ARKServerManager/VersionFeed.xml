@@ -5,7 +5,7 @@
   <title>Ark Server Manager Version Feed</title>
   <subtitle>This is the Ark Server Manager release version feed.</subtitle>
   <link href="https://arkservermanager.freeforums.net/" />
-  <updated>2024-01-20T00:00:00Z</updated>
+  <updated>2024-01-31T00:00:00Z</updated>
     
     <entry>
         <id>urn:uuid:b4f650da-ce08-497d-ae01-33326e72ab42</id>
@@ -20,6 +20,11 @@
                     <br/>
                     <ul>
                         <li>Discord - exclusive join commands.</li>
+                    </ul>
+                    <u style="font-size: .9em;">BUGFIX</u>
+                    <br/>
+                    <ul>
+                        <li>Varius config fixes.</li>
                     </ul>
                 </p>
             </div>
