@@ -995,7 +995,7 @@ namespace ServerManagerTool.Utils
             if (Int64.TryParse(arkId, out Int64 id64))
             {
                 var digits = id64.ToString().Length;
-                if (digits < 17 || digits > 19)
+                if ((digits != 17) || (digits != 19))
                 {
                     responseList.Add("Invalid ID format (wrong digits count)\n");
                     return false;
