@@ -783,19 +783,8 @@ namespace ServerManagerTool.Utils
                         try
                         {
                             var arkIDs = arkID.Split(new[] { "\r\n" }, StringSplitOptions.RemoveEmptyEntries);
-                            if (Int64.TryParse(arkIDs[0], out Int64 id64))
+                            if (!isValidArkId(arkIDs[0], responseList))
                             {
-                                var digits = id64.ToString().Length;
-                                if (digits < 17 || digits > 19)
-                                {
-                                    responseList.Add("Invalid ID format\n");
-                                    _currentProfileCommands.Remove(server.Profile.ProfileID);
-                                    break;
-                                }
-                            }
-                            else
-                            {
-                                responseList.Add("Invalid ID format\n");
                                 _currentProfileCommands.Remove(server.Profile.ProfileID);
                                 break;
                             }
@@ -806,7 +795,7 @@ namespace ServerManagerTool.Utils
                             server.Profile.SaveServerFileExclusive();
                             foreach (var ID in arkIDs)
                             {
-                                responseList.Add("ID " + ID + " added in " + server.Profile.DiscordAlias + " list\n");
+                                responseList.Add("ID " + ID + " added to " + server.Profile.DiscordAlias + "\n");
                             }
                         }
                         catch (Exception)
@@ -880,19 +869,8 @@ namespace ServerManagerTool.Utils
                         try
                         {
                             var arkIDs = arkID.Split(new[] { "\r\n" }, StringSplitOptions.RemoveEmptyEntries);
-                            if (Int64.TryParse(arkIDs[0], out Int64 id64))
+                            if (!isValidArkId(arkIDs[0], responseList))
                             {
-                                var digits = id64.ToString().Length;
-                                if (digits < 17 || digits > 19)
-                                {
-                                    responseList.Add("Invalid ID format\n");
-                                    _currentProfileCommands.Remove(server.Profile.ProfileID);
-                                    break;
-                                }
-                            }
-                            else
-                            {
-                                responseList.Add("Invalid ID format\n");
                                 _currentProfileCommands.Remove(server.Profile.ProfileID);
                                 break;
                             }
@@ -902,7 +880,7 @@ namespace ServerManagerTool.Utils
                             foreach (var ID in arkUserList)
                             {
                                 server.Profile.ServerFilesExclusive.Remove(ID.PlayerId);
-                                responseList.Add("ID " + ID.PlayerId + " removed from " + server.Profile.DiscordAlias + " list\n");
+                                responseList.Add("ID " + ID.PlayerId + " removed from " + server.Profile.DiscordAlias + "\n");
                             }
                             server.Profile.SaveServerFileExclusive();
                         }
@@ -977,19 +955,8 @@ namespace ServerManagerTool.Utils
                         try
                         {
                             var arkIDs = arkID.Split(new[] { "\r\n" }, StringSplitOptions.RemoveEmptyEntries);
-                            if (Int64.TryParse(arkIDs[0], out Int64 id64))
+                            if (!isValidArkId(arkIDs[0], responseList))
                             {
-                                var digits = id64.ToString().Length;
-                                if (digits < 17 || digits > 19)
-                                {
-                                    responseList.Add("Invalid ID format\n");
-                                    _currentProfileCommands.Remove(server.Profile.ProfileID);
-                                    break;
-                                }
-                            }
-                            else
-                            {
-                                responseList.Add("Invalid ID format\n");
                                 _currentProfileCommands.Remove(server.Profile.ProfileID);
                                 break;
                             }
@@ -1001,7 +968,9 @@ namespace ServerManagerTool.Utils
                                 if (string.IsNullOrWhiteSpace(ID?.PlayerId))
                                     continue;
                                 if (server.Profile.ServerFilesExclusive.Any(i => i.PlayerId.Equals(ID.PlayerId)))
-                                    responseList.Add("ID " + ID.PlayerId + " already in " + server.Profile.DiscordAlias + " list\n");
+                                    responseList.Add("ID " + ID.PlayerId + " already in " + server.Profile.DiscordAlias + "\n");
+                                else
+                                    responseList.Add("ID " + ID.PlayerId + " NOT found in " + server.Profile.DiscordAlias + "\n");
                             }
                         }
                         catch (Exception)
@@ -1019,6 +988,25 @@ namespace ServerManagerTool.Utils
             }).Wait(token);
 
             return responseList;
+        }
+
+        private static bool isValidArkId( String arkId, List<string> responseList )
+        {
+            if (Int64.TryParse(arkId, out Int64 id64))
+            {
+                var digits = id64.ToString().Length;
+                if (digits < 17 || digits > 19)
+                {
+                    responseList.Add("Invalid ID format (wrong digits count)\n");
+                    return false;
+                }
+                return true;
+            }
+            else
+            {
+                responseList.Add("Invalid ID format\n");
+                return false;
+            }
         }
     }
 }
