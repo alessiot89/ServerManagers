@@ -782,10 +782,26 @@ namespace ServerManagerTool.Utils
 
                         try
                         {
-                            server.Profile.DestroyServerFilesWatcher();
                             var arkIDs = arkID.Split(new[] { "\r\n" }, StringSplitOptions.RemoveEmptyEntries);
+                            if (Int64.TryParse(arkIDs[0], out Int64 id64))
+                            {
+                                var digits = id64.ToString().Length;
+                                if (digits < 17 || digits > 19)
+                                {
+                                    responseList.Add("Invalid ID format\n");
+                                    _currentProfileCommands.Remove(server.Profile.ProfileID);
+                                    break;
+                                }
+                            }
+                            else
+                            {
+                                responseList.Add("Invalid ID format\n");
+                                _currentProfileCommands.Remove(server.Profile.ProfileID);
+                                break;
+                            }
                             var arkUsers = SteamUtils.GetSteamUserDetails(arkIDs.ToList());
                             var arkUserList = PlayerUserList.GetList(arkUsers, arkIDs);
+                            server.Profile.DestroyServerFilesWatcher();
                             server.Profile.ServerFilesExclusive.AddRange(arkUserList);
                             server.Profile.SaveServerFileExclusive();
                             foreach (var ID in arkIDs)
@@ -863,10 +879,26 @@ namespace ServerManagerTool.Utils
 
                         try
                         {
-                            server.Profile.DestroyServerFilesWatcher();
                             var arkIDs = arkID.Split(new[] { "\r\n" }, StringSplitOptions.RemoveEmptyEntries);
+                            if (Int64.TryParse(arkIDs[0], out Int64 id64))
+                            {
+                                var digits = id64.ToString().Length;
+                                if (digits < 17 || digits > 19)
+                                {
+                                    responseList.Add("Invalid ID format\n");
+                                    _currentProfileCommands.Remove(server.Profile.ProfileID);
+                                    break;
+                                }
+                            }
+                            else
+                            {
+                                responseList.Add("Invalid ID format\n");
+                                _currentProfileCommands.Remove(server.Profile.ProfileID);
+                                break;
+                            }
                             var arkUsers = SteamUtils.GetSteamUserDetails(arkIDs.ToList());
                             var arkUserList = PlayerUserList.GetList(arkUsers, arkIDs);
+                            server.Profile.DestroyServerFilesWatcher();
                             foreach (var ID in arkUserList)
                             {
                                 server.Profile.ServerFilesExclusive.Remove(ID.PlayerId);
@@ -944,10 +976,26 @@ namespace ServerManagerTool.Utils
 
                         try
                         {
-                            server.Profile.DestroyServerFilesWatcher();
                             var arkIDs = arkID.Split(new[] { "\r\n" }, StringSplitOptions.RemoveEmptyEntries);
+                            if (Int64.TryParse(arkIDs[0], out Int64 id64))
+                            {
+                                var digits = id64.ToString().Length;
+                                if (digits < 17 || digits > 19)
+                                {
+                                    responseList.Add("Invalid ID format\n");
+                                    _currentProfileCommands.Remove(server.Profile.ProfileID);
+                                    break;
+                                }
+                            }
+                            else
+                            {
+                                responseList.Add("Invalid ID format\n");
+                                _currentProfileCommands.Remove(server.Profile.ProfileID);
+                                break;
+                            }
                             var arkUsers = SteamUtils.GetSteamUserDetails(arkIDs.ToList());
                             var arkUserList = PlayerUserList.GetList(arkUsers, arkIDs);
+                            server.Profile.DestroyServerFilesWatcher();
                             foreach ( var ID in arkUserList )
                             {
                                 if (string.IsNullOrWhiteSpace(ID?.PlayerId))
