@@ -758,6 +758,12 @@
     <sys:String x:Key="GlobalSettings_DiscordBotAllowStartTooltip">If enabled, the start command can be sent from discord.</sys:String>
     <sys:String x:Key="GlobalSettings_DiscordBotAllowStopTooltip">If enabled, the stop command can be sent from discord.</sys:String>
     <sys:String x:Key="GlobalSettings_DiscordBotAllowUpdateTooltip">If enabled, the update command can be sent from discord.</sys:String>
+    <sys:String x:Key="GlobalSettings_DiscordBotAllowDiscordAddIdLabel">Allow Add ID</sys:String>
+    <sys:String x:Key="GlobalSettings_DiscordBotAllowDiscordAddIdTooltip">If enabled, the profile will listen for add ARK ID commands from discord.</sys:String>
+    <sys:String x:Key="GlobalSettings_DiscordBotAllowDiscordRemoveIdLabel">Allow Remove ID</sys:String>
+    <sys:String x:Key="GlobalSettings_DiscordBotAllowDiscordRemoveIdTooltip">If enabled, the profile will listen for remove ARK ID commands from discord.</sys:String>
+    <sys:String x:Key="GlobalSettings_DiscordBotscordCheckIdLabel">Allow Check ID</sys:String>
+    <sys:String x:Key="GlobalSettings_DiscordBotAllowDiscordCheckIdTooltip">If enabled, the profile will listen for check ARK ID commands from discord.</sys:String>
 
     <sys:String x:Key="GlobalSettings_EmailSettingsLabel">SMTP Email Settings</sys:String>
     <sys:String x:Key="GlobalSettings_EmailHostLabel">Host:</sys:String>
@@ -1401,6 +1407,12 @@ Undocumented bye wildcard.</sys:String>
     <sys:String x:Key="ServerSettings_AllowDiscordStopTooltip">If enabled, the profile will listen for stop commands from discord.</sys:String>
     <sys:String x:Key="ServerSettings_AllowDiscordUpdateLabel">Allow Update</sys:String>
     <sys:String x:Key="ServerSettings_AllowDiscordUpdateTooltip">If enabled, the profile will listen for update commands from discord.</sys:String>
+    <sys:String x:Key="ServerSettings_AllowDiscordAddIdLabel">Allow Add ID</sys:String>
+    <sys:String x:Key="ServerSettings_AllowDiscordAddIdTooltip">If enabled, the profile will listen for add ARK ID commands from discord.</sys:String>
+    <sys:String x:Key="ServerSettings_AllowDiscordRemoveIdLabel">Allow Remove ID</sys:String>
+    <sys:String x:Key="ServerSettings_AllowDiscordRemoveIdTooltip">If enabled, the profile will listen for remove ARK ID commands from discord.</sys:String>
+    <sys:String x:Key="ServerSettings_AllowDiscordCheckIdLabel">Allow Check ID</sys:String>
+    <sys:String x:Key="ServerSettings_AllowDiscordCheckIdTooltip">If enabled, the profile will listen for check ARK ID commands from discord.</sys:String>
     <!--#endregion-->
 
     <!--#region Server Settings - Server Details -->
