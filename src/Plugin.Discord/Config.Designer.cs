@@ -12,7 +12,7 @@ namespace ServerManagerTool.Plugin.Discord {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "17.2.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "17.8.0.0")]
     internal sealed partial class Config : global::System.Configuration.ApplicationSettingsBase {
         
         private static Config defaultInstance = ((Config)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Config())));
@@ -20,24 +20,6 @@ namespace ServerManagerTool.Plugin.Discord {
         public static Config Default {
             get {
                 return defaultInstance;
-            }
-        }
-        
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("https://servermanagers.azurewebsites.net/api/plugin/call/{0}/{1}/")]
-        public string PluginCallUrlFormat {
-            get {
-                return ((string)(this["PluginCallUrlFormat"]));
-            }
-        }
-        
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("12")]
-        public int PluginCallUrlDelay {
-            get {
-                return ((int)(this["PluginCallUrlDelay"]));
             }
         }
         
@@ -52,7 +34,7 @@ namespace ServerManagerTool.Plugin.Discord {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("1B745000-6389-4770-9509-C6A05E209323")]
+        [global::System.Configuration.DefaultSettingValueAttribute("E496429B-CF81-4D14-BA8F-1278BE78B89F")]
         public string PluginCode {
             get {
                 return ((string)(this["PluginCode"]));
@@ -143,24 +125,6 @@ namespace ServerManagerTool.Plugin.Discord {
         public string VersionBetaFeedUrl {
             get {
                 return ((string)(this["VersionBetaFeedUrl"]));
-            }
-        }
-        
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("https://api.ipify.org")]
-        public string PublicIPCheckUrl1 {
-            get {
-                return ((string)(this["PublicIPCheckUrl1"]));
-            }
-        }
-        
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("https://whatismyip.akamai.com/")]
-        public string PublicIPCheckUrl2 {
-            get {
-                return ((string)(this["PublicIPCheckUrl2"]));
             }
         }
     }

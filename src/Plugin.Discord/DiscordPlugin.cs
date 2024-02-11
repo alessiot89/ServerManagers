@@ -83,19 +83,6 @@ namespace ServerManagerTool.Plugin.Discord
             }
         }
 
-        private async Task CallHomeAsync()
-        {
-            try
-            {
-                var publicIP = await NetworkUtils.DiscoverPublicIPAsync();
-                await NetworkUtils.PerformCallToAPIAsync(PluginCode, publicIP);
-            }
-            catch (Exception ex)
-            {
-                Debug.WriteLine($"Failed calling home to API.\r\n{ex.Message}");
-            }
-        }
-
         public void HandleAlert(AlertType alertType, string profileName, string alertMessage)
         {
             if (string.IsNullOrWhiteSpace(alertMessage))
@@ -195,14 +182,6 @@ namespace ServerManagerTool.Plugin.Discord
         public void Initialize()
         {
             LoadConfig();
-
-            if (PluginConfig.PluginCallUrlLast.AddHours(Config.Default.PluginCallUrlDelay) < DateTime.Now)
-            {
-                CallHomeAsync().DoNotWait();
-
-                PluginConfig.PluginCallUrlLast = DateTime.Now;
-                SaveConfig();
-            }
         }
 
         internal void BackupConfig()

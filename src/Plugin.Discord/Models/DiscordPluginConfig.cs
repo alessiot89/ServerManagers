@@ -9,16 +9,9 @@ namespace ServerManagerTool.Plugin.Discord
         public DiscordPluginConfig()
             : base()
         {
-            PluginCallUrlLast = DateTime.MinValue;
             ConfigProfiles = new ObservableList<ConfigProfile>();
         }
 
-        [DataMember]
-        public DateTime PluginCallUrlLast
-        {
-            get;
-            set;
-        }
 
         [DataMember]
         public ObservableList<ConfigProfile> ConfigProfiles

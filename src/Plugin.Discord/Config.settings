@@ -2,17 +2,11 @@
 <SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="ServerManagerTool.Plugin.Discord" GeneratedClassName="Config">
   <Profiles />
   <Settings>
-    <Setting Name="PluginCallUrlFormat" Type="System.String" Scope="Application">
-      <Value Profile="(Default)">https://servermanagers.azurewebsites.net/api/plugin/call/{0}/{1}/</Value>
-    </Setting>
-    <Setting Name="PluginCallUrlDelay" Type="System.Int32" Scope="Application">
-      <Value Profile="(Default)">12</Value>
-    </Setting>
     <Setting Name="RequestTimeout" Type="System.Int32" Scope="Application">
       <Value Profile="(Default)">5000</Value>
     </Setting>
     <Setting Name="PluginCode" Type="System.String" Scope="Application">
-      <Value Profile="(Default)">1B745000-6389-4770-9509-C6A05E209323</Value>
+      <Value Profile="(Default)">E496429B-CF81-4D14-BA8F-1278BE78B89F</Value>
     </Setting>
     <Setting Name="PluginName" Type="System.String" Scope="Application">
       <Value Profile="(Default)">Discord Plugin</Value>
@@ -40,12 +34,6 @@
     </Setting>
     <Setting Name="VersionBetaFeedUrl" Type="System.String" Scope="Application">
       <Value Profile="(Default)">https://raw.githubusercontent.com/alessiot89/ServerManagers/master/Plugins/Discord/beta/VersionFeed.xml</Value>
-    </Setting>
-    <Setting Name="PublicIPCheckUrl1" Type="System.String" Scope="Application">
-      <Value Profile="(Default)">https://api.ipify.org</Value>
-    </Setting>
-    <Setting Name="PublicIPCheckUrl2" Type="System.String" Scope="Application">
-      <Value Profile="(Default)">https://whatismyip.akamai.com/</Value>
     </Setting>
   </Settings>
 </SettingsFile>
