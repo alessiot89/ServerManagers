@@ -819,7 +819,7 @@ namespace ServerManagerTool.Utils
         {
             if (string.IsNullOrWhiteSpace(profileIdOrAlias))
             {
-                return new List<string> { string.Format(_globalizer.GetResourceString("DiscordBot_ProfileMissing"), CommandType.AddId) };
+                return new List<string> { string.Format(_globalizer.GetResourceString("DiscordBot_ProfileMissing"), CommandType.RemoveId) };
             }
 
             var responseList = new List<string>();

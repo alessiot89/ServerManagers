@@ -25,7 +25,7 @@ namespace ServerManagerTool.DiscordBot.Modules
 
         [Command("addId", RunMode = RunMode.Async)]
         [Summary("Adds an Exclusive Join ID")]
-        [Remarks("info profileId|alias")]
+        [Remarks("addId profileId|alias arkId")]
         [RequireBotPermission(ChannelPermission.ViewChannel | ChannelPermission.SendMessages)]
         public async Task AddIdAsync(string profileIdOrAlias, string arkId)
         {
@@ -60,7 +60,7 @@ namespace ServerManagerTool.DiscordBot.Modules
 
         [Command("removeId", RunMode = RunMode.Async)]
         [Summary("Removes an Exclusive Join ID")]
-        [Remarks("info profileId|alias")]
+        [Remarks("removeId profileId|alias arkId")]
         [RequireBotPermission(ChannelPermission.ViewChannel | ChannelPermission.SendMessages)]
         public async Task RemoveIdAsync(string profileIdOrAlias, string arkId)
         {
@@ -95,7 +95,7 @@ namespace ServerManagerTool.DiscordBot.Modules
 
         [Command("checkId", RunMode = RunMode.Async)]
         [Summary("Checks ID in Excusive Join list")]
-        [Remarks("info profileId|alias")]
+        [Remarks("checkId profileId|alias arkId")]
         [RequireBotPermission(ChannelPermission.ViewChannel | ChannelPermission.SendMessages)]
         public async Task CheckIdAsync(string profileIdOrAlias, string arkId)
         {

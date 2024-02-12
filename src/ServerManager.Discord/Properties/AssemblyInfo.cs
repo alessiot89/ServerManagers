@@ -6,7 +6,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Bletch1971")]
 [assembly: AssemblyProduct("Server Managers")]
-[assembly: AssemblyCopyright("Copyright © 2015-2022")]
+[assembly: AssemblyCopyright("Copyright © 2015-2024")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
