@@ -618,6 +618,13 @@
 			"ClassName": "PrimalItemTrophy_MasterController_C",
 			"Description": "Master Controller Trophy",
 			"Mod": "Genesis"
+		},
+		{
+			"Category": "Tools",
+			"IsHarvestable": false,
+			"ClassName": "PrimalItem_WeaponFishingNet_C",
+			"Description": "Fish Net",
+			"Mod": "Genesis"
 		}
 	],
 	"MapSpawners": [
