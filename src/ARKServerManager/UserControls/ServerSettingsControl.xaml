@@ -5848,7 +5848,7 @@
                                                 </DataGridTextColumn.Header>
                                             </DataGridTextColumn>
 
-                                            <DataGridTextColumn     Width="Auto" MinWidth="50" Binding="{Binding NumItemSetsPower, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, NotifyOnSourceUpdated=True}">
+                                            <DataGridTextColumn     Width="Auto" MinWidth="50" Binding="{Binding NumItemSetsPower, Mode=TwoWay, UpdateSourceTrigger=LostFocus, NotifyOnSourceUpdated=True}">
                                                 <DataGridTextColumn.Header>
                                                     <TextBlock Text="{DynamicResource ServerSettings_SupplyCrate_Crate_NumItemSetsPowerColumnLabel}" ToolTip="{DynamicResource ServerSettings_SupplyCrate_Crate_NumItemSetsPowerColumnTooltip}" TextWrapping="Wrap"/>
                                                 </DataGridTextColumn.Header>
@@ -5998,13 +5998,13 @@
                                                 </DataGridTextColumn.Header>
                                             </DataGridTextColumn>
 
-                                            <DataGridTextColumn     Width="Auto" MinWidth="50" Binding="{Binding NumItemsPower, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, NotifyOnSourceUpdated=True}" >
+                                            <DataGridTextColumn     Width="Auto" MinWidth="50" Binding="{Binding NumItemsPower, Mode=TwoWay, UpdateSourceTrigger=LostFocus, NotifyOnSourceUpdated=True}" >
                                                 <DataGridTextColumn.Header>
                                                     <TextBlock Text="{DynamicResource ServerSettings_SupplyCrate_ItemSet_NumItemsPowerColumnLabel}" ToolTip="{DynamicResource ServerSettings_SupplyCrate_ItemSet_NumItemsPowerColumnTooltip}" TextWrapping="Wrap"/>
                                                 </DataGridTextColumn.Header>
                                             </DataGridTextColumn>
 
-                                            <DataGridTextColumn     Width="Auto" MinWidth="50" Binding="{Binding SetWeight, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, NotifyOnSourceUpdated=True}" >
+                                            <DataGridTextColumn     Width="Auto" MinWidth="50" Binding="{Binding SetWeight, Mode=TwoWay, UpdateSourceTrigger=LostFocus, NotifyOnSourceUpdated=True}" >
                                                 <DataGridTextColumn.Header>
                                                     <TextBlock Text="{DynamicResource ServerSettings_SupplyCrate_ItemSet_SetWeightColumnLabel}" ToolTip="{DynamicResource ServerSettings_SupplyCrate_ItemSet_SetWeightColumnTooltip}" TextWrapping="Wrap"/>
                                                 </DataGridTextColumn.Header>
@@ -6054,7 +6054,7 @@
                                         </StackPanel>
                                     </GroupBox.Header>
 
-                                    <DataGrid Name="SupplyCrateItemSetEntriesGrid" ItemsSource="{Binding Path=SelectedSupplyCrateItemSet.ItemEntries, ElementName=SettingsControl}" SelectedItem="{Binding Path=SelectedSupplyCrateItemSetEntry, ElementName=SettingsControl}" AutoGenerateColumns="False" CanUserAddRows="False" CanUserDeleteRows="False" CanUserReorderColumns="False" CanUserSortColumns="true" SelectionMode="Single" CanUserResizeRows="False" RowHeaderWidth="25" SourceUpdated="SupplyCratesGrids_SourceUpdated">
+                                    <DataGrid Name="SupplyCrateItemSetEntriesGrid" ItemsSource="{Binding Path=SelectedSupplyCrateItemSet.ItemEntries, ElementName=SettingsControl}" SelectedItem="{Binding Path=SelectedSupplyCrateItemSetEntry, ElementName=SettingsControl}" AutoGenerateColumns="False" CanUserAddRows="False" CanUserDeleteRows="False" CanUserReorderColumns="False" CanUserSortColumns="true" SelectionMode="Single" CanUserResizeRows="False" RowHeaderWidth="25" SourceUpdated="SupplyCratesGrids_SourceUpdated" SelectionChanged="SupplyCrateItemSetEntriesGrid_SelectionChanged">
                                         <DataGrid.Resources>
                                             <Style TargetType="{x:Type DataGridRow}">
                                                 <Style.Resources>
@@ -6112,19 +6112,19 @@
                                                 </DataGridTextColumn.Header>
                                             </DataGridTextColumn>
 
-                                            <DataGridTextColumn     Width="Auto" MinWidth="50" Binding="{Binding MinQuality, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, NotifyOnSourceUpdated=True}" >
+                                            <DataGridTextColumn     Width="Auto" MinWidth="50" Binding="{Binding MinQuality, Mode=TwoWay, UpdateSourceTrigger=LostFocus, NotifyOnSourceUpdated=True}" >
                                                 <DataGridTextColumn.Header>
                                                     <TextBlock Text="{DynamicResource ServerSettings_SupplyCrate_ItemSetEntry_MinQualityColumnLabel}" ToolTip="{DynamicResource ServerSettings_SupplyCrate_ItemSetEntry_MinQualityColumnTooltip}" TextWrapping="Wrap"/>
                                                 </DataGridTextColumn.Header>
                                             </DataGridTextColumn>
 
-                                            <DataGridTextColumn     Width="Auto" MinWidth="50" Binding="{Binding MaxQuality, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, NotifyOnSourceUpdated=True}" >
+                                            <DataGridTextColumn     Width="Auto" MinWidth="50" Binding="{Binding MaxQuality, Mode=TwoWay, UpdateSourceTrigger=LostFocus, NotifyOnSourceUpdated=True}" >
                                                 <DataGridTextColumn.Header>
                                                     <TextBlock Text="{DynamicResource ServerSettings_SupplyCrate_ItemSetEntry_MaxQualityColumnLabel}" ToolTip="{DynamicResource ServerSettings_SupplyCrate_ItemSetEntry_MaxQualityColumnTooltip}" TextWrapping="Wrap"/>
                                                 </DataGridTextColumn.Header>
                                             </DataGridTextColumn>
 
-                                            <DataGridTextColumn     Width="Auto" MinWidth="50" Binding="{Binding EntryWeight, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, NotifyOnSourceUpdated=True}" >
+                                            <DataGridTextColumn     Width="Auto" MinWidth="50" Binding="{Binding EntryWeight, Mode=TwoWay, UpdateSourceTrigger=LostFocus, NotifyOnSourceUpdated=True}" >
                                                 <DataGridTextColumn.Header>
                                                     <TextBlock Text="{DynamicResource ServerSettings_SupplyCrate_ItemSetEntry_EntryWeightColumnLabel}" ToolTip="{DynamicResource ServerSettings_SupplyCrate_ItemSetEntry_EntryWeightColumnTooltip}" TextWrapping="Wrap"/>
                                                 </DataGridTextColumn.Header>
@@ -6146,9 +6146,31 @@
                                                 </DataGridTemplateColumn.CellTemplate>
                                             </DataGridTemplateColumn>
 
-                                            <DataGridTextColumn     Width="Auto" MinWidth="50" Binding="{Binding ChanceToBeBlueprintOverride, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, NotifyOnSourceUpdated=True}" >
+                                            <DataGridTextColumn     Width="Auto" MinWidth="50" Binding="{Binding ChanceToBeBlueprintOverride, Mode=TwoWay, UpdateSourceTrigger=LostFocus, NotifyOnSourceUpdated=True}" >
                                                 <DataGridTextColumn.Header>
                                                     <TextBlock Text="{DynamicResource ServerSettings_SupplyCrate_ItemSetEntry_ChanceToBeBlueprintOverrideColumnLabel}" ToolTip="{DynamicResource ServerSettings_SupplyCrate_ItemSetEntry_ChanceToBeBlueprintOverrideColumnTooltip}" TextWrapping="Wrap"/>
+                                                </DataGridTextColumn.Header>
+                                            </DataGridTextColumn>
+
+                                            <DataGridTemplateColumn Width="Auto" MinWidth="50">
+                                                <DataGridTemplateColumn.Header>
+                                                    <TextBlock Text="{DynamicResource ServerSettings_SupplyCrate_ItemSetEntry_ForcePreventGrindingColumnLabel}" ToolTip="{DynamicResource ServerSettings_SupplyCrate_ItemSetEntry_ForcePreventGrindingColumnTooltip}" TextWrapping="Wrap"/>
+                                                </DataGridTemplateColumn.Header>
+                                                <DataGridTemplateColumn.HeaderStyle>
+                                                    <Style TargetType="{x:Type DataGridColumnHeader}">
+                                                        <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+                                                    </Style>
+                                                </DataGridTemplateColumn.HeaderStyle>
+                                                <DataGridTemplateColumn.CellTemplate>
+                                                    <DataTemplate>
+                                                        <CheckBox IsChecked="{Binding ForcePreventGrinding, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, NotifyOnSourceUpdated=True}" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                                    </DataTemplate>
+                                                </DataGridTemplateColumn.CellTemplate>
+                                            </DataGridTemplateColumn>
+
+                                            <DataGridTextColumn     Width="Auto" MinWidth="50" Binding="{Binding ItemStatClampsMultiplier, Mode=TwoWay, UpdateSourceTrigger=LostFocus, NotifyOnSourceUpdated=True}" >
+                                                <DataGridTextColumn.Header>
+                                                    <TextBlock Text="{DynamicResource ServerSettings_SupplyCrate_ItemSetEntry_ItemStatClampsMultiplierColumnLabel}" ToolTip="{DynamicResource ServerSettings_SupplyCrate_ItemSetEntry_ItemStatClampsMultiplierColumnTooltip}" TextWrapping="Wrap"/>
                                                 </DataGridTextColumn.Header>
                                             </DataGridTextColumn>
 

@@ -437,6 +437,24 @@ namespace ServerManagerTool.Lib
             set { SetValue(ChanceToBeBlueprintOverrideProperty, value); }
         }
 
+        public static readonly DependencyProperty ForcePreventGrindingProperty = DependencyProperty.Register(nameof(ForcePreventGrinding), typeof(bool), typeof(SupplyCrateItemSetEntry), new PropertyMetadata(false));
+        [DataMember]
+        [AggregateIniValueEntry(Key = "bForcePreventGrinding", ExcludeIfFalse = true)]
+        public bool ForcePreventGrinding
+        {
+            get { return (bool)GetValue(ForcePreventGrindingProperty); }
+            set { SetValue(ForcePreventGrindingProperty, value); }
+        }
+
+        public static readonly DependencyProperty ItemStatClampsMultiplierProperty = DependencyProperty.Register(nameof(ItemStatClampsMultiplier), typeof(float), typeof(SupplyCrateItemSetEntry), new PropertyMetadata(1.0f));
+        [DataMember]
+        [AggregateIniValueEntry]
+        public float ItemStatClampsMultiplier
+        {
+            get { return (float)GetValue(ItemStatClampsMultiplierProperty); }
+            set { SetValue(ItemStatClampsMultiplierProperty, value); }
+        }
+
         public static readonly DependencyProperty ItemClassStringsProperty = DependencyProperty.Register(nameof(ItemClassStrings), typeof(StringIniValueList), typeof(SupplyCrateItemSetEntry), new PropertyMetadata(null));
         [DataMember]
         [AggregateIniValueEntry(ValueWithinBrackets = true)]

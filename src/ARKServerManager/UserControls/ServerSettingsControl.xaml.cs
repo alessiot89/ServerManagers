@@ -4705,5 +4705,15 @@ namespace ServerManagerTool
             this.ProfileLastStarted = $"{_globalizer.GetResourceString("ServerSettings_LastStartedLabel")} {date}";
         }
         #endregion
+
+        private void SupplyCrateItemSetEntriesGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
+
+        private void SupplyCrateItemSetsGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }

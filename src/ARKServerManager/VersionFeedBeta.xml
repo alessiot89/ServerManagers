@@ -5,8 +5,41 @@
   <title>Ark Server Manager Version Feed</title>
   <subtitle>This is the Ark Server Manager beta version feed.</subtitle>
   <link href="https://arkservermanager.freeforums.net/" />
-    <updated>2024-01-31T00:00:00Z</updated>
+    <updated>2024-03-23T20:35:00Z</updated>
 
+    <entry>
+        <id>urn:f9dc3ae5-246c-4198-8c3a-573911a81e17</id>
+        <title>2.1.448 (2.1.448.1)</title>
+        <summary>2.1.448.1</summary>
+        <link href="" />
+        <updated>2024-03-23T20:35:00Z</updated>
+        <content type="xhtml">
+            <div xmlns="http://www.w3.org/1999/xhtml" style="font-family: Arial, Verdana, Helvetica, Sans-Serif;font-size: .8em;">
+                <p>
+                    <u style="font-size: .9em;">NEW</u>
+                    <br/>
+                    <ul>
+                        <li>Supply Crate Overrides - added force prevent grinding and clamp multiplier settings</li>
+                    </ul>
+                    <u style="font-size: .9em;">CHANGE</u>
+                    <br/>
+                    <ul>
+                        <li>Updated gamedata files.</li>
+                    </ul>
+                    <u style="font-size: .9em;">BUGFIX</u>
+                    <br/>
+                    <ul>
+                        <li>Can type floating point in create overrides where needed.</li>
+                    </ul>
+                </p>
+            </div>
+        </content>
+        <author>
+            <name>Alessio</name>
+            <email></email>
+        </author>
+    </entry>
+    
     <entry>
         <id>urn:uuid:b4f650da-ce08-497d-ae01-33326e72ab42</id>
         <title>2.1.447 (2.1.447.1)</title>

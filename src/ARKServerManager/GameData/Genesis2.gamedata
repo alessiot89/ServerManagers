@@ -1914,6 +1914,104 @@
 			"ClassName": "PrimalItem_WeaponTekPistol_Gauntlet_C",
 			"Description": "WeaponTekPistol Gauntlet",
 			"Mod": "Genesis2"
+		},
+		{
+			"Category": "Saddles",
+			"IsHarvestable": false,
+			"ClassName": "PrimalItemArmor_MilkGliderSaddle_C",
+			"Description": "Maewing Saddle",
+			"Mod": "Genesis2"
+		},
+		{
+			"Category": "Structures",
+			"IsHarvestable": false,
+			"ClassName": "PrimalItemCanoe_C",
+			"Description": "Canoe",
+			"Mod": "Genesis2"
+		},
+		{
+			"Category": "Structures",
+			"IsHarvestable": false,
+			"ClassName": "PrimalItemStructure_AmmoContainer_C",
+			"Description": "Ammo Box",
+			"Mod": "Genesis2"
+		},
+		{
+			"Category": "Structures",
+			"IsHarvestable": false,
+			"ClassName": "PrimalItemStructure_LoadoutDummy_C",
+			"Description": "Loadout Mannequin",
+			"Mod": "Genesis2"
+		},
+		{
+			"Category": "Ammunition",
+			"IsHarvestable": false,
+			"ClassName": "PrimalItemAmmo_Boulder_Fire_C",
+			"Description": "Jar of Pitch",
+			"Mod": "Genesis2"
+		},
+		{
+			"Category": "Ammunition",
+			"IsHarvestable": false,
+			"ClassName": "PrimalItemAmmo_ArrowNet_C",
+			"Description": "Net Projectile",
+			"Mod": "Genesis2"
+		},
+		{
+			"Category": "Vehicles",
+			"IsHarvestable": false,
+			"ClassName": "PrimalItem_Spawner_HoverSail_Main_C",
+			"Description": "Tek Hoversail",
+			"Mod": "Genesis2"
+		},
+		{
+			"Category": "Structures",
+			"IsHarvestable": false,
+			"ClassName": "PrimalItemStructure_CropPlot_Tek_C",
+			"Description": "Tek Crop Plot",
+			"Mod": "Genesis2"
+		},
+		{
+			"Category": "Structures",
+			"IsHarvestable": false,
+			"ClassName": "PrimalItemStructure_EggIncubator_C",
+			"Description": "Egg Incubator",
+			"Mod": "Genesis2"
+		},
+		{
+			"Category": "Weapons",
+			"IsHarvestable": false,
+			"ClassName": "PrimalItem_WeaponMinigun_C",
+			"Description": "Minigun",
+			"Mod": "Genesis2"
+		},
+		{
+			"Category": "Saddles",
+			"IsHarvestable": false,
+			"ClassName": "PrimalItemArmor_SpaceDolphinSaddle_Tek_C",
+			"Description": "Astrodelphis Starwing Saddle",
+			"Mod": "Genesis2"
+		},
+		{
+			"Category": "Weapons",
+			"IsHarvestable": false,
+			"ClassName": "PrimalItem_WeaponTekPistol_C",
+			"Description": "Tek Phase Pistol",
+			"Mod": "Genesis2"
+		},
+		{
+			"Category": "Weapons",
+			"IsHarvestable": false,
+			"ClassName": "PrimalItem_WeaponTekBow_C",
+			"Description": "Tek Bow",
+			"Mod": "Genesis2"
+		},
+		{
+			"Category": "Structures",
+			"IsHarvestable": false,
+			"ClassName": "PrimalItemStructure_TekSecurityConsole_C",
+			"Description": "Tek Surveillance Console",
+			"Mod": "Genesis2"
 		}
 	],
 	"MapSpawners": [
@@ -2202,6 +2300,276 @@
 		{
 			"ClassName": "SupplyCrate_Space_08_BlackPearls_C",
 			"Description": "SupplyCrate (orange)",
+			"Mod": "Genesis2"
+		},
+		{
+			"ClassName": "MissionMetaData_ExpG_Gamma_C",
+			"Description": "Code Red (Gamma)",
+			"Mod": "Genesis2"
+		},
+		{
+			"ClassName": "MissionMetaData_LifeSupport_Gamma_C",
+			"Description": "Life Support (Gamma)",
+			"Mod": "Genesis2"
+		},
+		{
+			"ClassName": "MissionMetaData_Maze_Gamma_C",
+			"Description": "Choose Your Own Adventure (Gamma)",
+			"Mod": "Genesis2"
+		},
+		{
+			"ClassName": "MissionMetaData_STAGauntlet_Gamma_C",
+			"Description": "Survive the ARK (Gamma)",
+			"Mod": "Genesis2"
+		},
+		{
+			"ClassName": "MissionMetaData_WhaleRescue_Gamma_C",
+			"Description": "Star Dolphin (Gamma)",
+			"Mod": "Genesis2"
+		},
+		{
+			"ClassName": "MissionMetaType_FinalBattle_Gamma_C",
+			"Description": "Terminus (Gamma)",
+			"Mod": "Genesis2"
+		},
+		{
+			"ClassName": "MissionType_Hunt_LionFishLion_Gamma_C",
+			"Description": "Shadowmane Prowl (Gamma)",
+			"Mod": "Genesis2"
+		},
+		{
+			"ClassName": "MissionType_Hunt_Shapeshifter_Gamma_C",
+			"Description": "Ferox Cull (Gamma)",
+			"Mod": "Genesis2"
+		},
+		{
+			"ClassName": "MissionType_Hunt_Spindles_Gamma_C",
+			"Description": "Velonasaur Stalk (Gamma)",
+			"Mod": "Genesis2"
+		},
+		{
+			"ClassName": "MissionType_Hunt_Torpor_LanternPet_Gamma_C",
+			"Description": "Bulbdog Fetch (Gamma)",
+			"Mod": "Genesis2"
+		},
+		{
+			"ClassName": "MissionType_Hunt_Torpor_MilkGlider_Gamma_C",
+			"Description": "Maewing Poach (Gamma)",
+			"Mod": "Genesis2"
+		},
+		{
+			"ClassName": "MissionType_Hunt_Torpor_Paracer_Gamma_C",
+			"Description": "Paracer Roundup (Gamma)",
+			"Mod": "Genesis2"
+		},
+		{
+			"ClassName": "MissionType_Race2_Canoe_Gamma_C",
+			"Description": "Downriver Run (Gamma)",
+			"Mod": "Genesis2"
+		},
+		{
+			"ClassName": "MissionType_Race2_Canoe_Team_Gamma_C",
+			"Description": "Team Downriver Run (Gamma)",
+			"Mod": "Genesis2"
+		},
+		{
+			"ClassName": "MissionType_Race2_Enforcer_Gamma_C",
+			"Description": "Circuit Chase (Gamma)",
+			"Mod": "Genesis2"
+		},
+		{
+			"ClassName": "MissionType_Race2_HoverSail_Gamma_C",
+			"Description": "Slipstream Sweep (Gamma)",
+			"Mod": "Genesis2"
+		},
+		{
+			"ClassName": "MissionType_Race2_MilkGlider_Gamma_C",
+			"Description": "Slide and Glide (Gamma)",
+			"Mod": "Genesis2"
+		},
+		{
+			"ClassName": "MissionType_Race2_SpaceDolphin_Gamma_C",
+			"Description": "Starwing Strike (Gamma)",
+			"Mod": "Genesis2"
+		},
+		{
+			"ClassName": "MissionMetaData_ExpG_Beta_C",
+			"Description": "Code Red (Beta)",
+			"Mod": "Genesis2"
+		},
+		{
+			"ClassName": "MissionMetaData_LifeSupport_Beta_C",
+			"Description": "Life Support (Beta)",
+			"Mod": "Genesis2"
+		},
+		{
+			"ClassName": "MissionMetaData_Maze_Beta_C",
+			"Description": "Choose Your Own Adventure (Beta)",
+			"Mod": "Genesis2"
+		},
+		{
+			"ClassName": "MissionMetaData_STAGauntlet_Beta_C",
+			"Description": "Survive the ARK (Beta)",
+			"Mod": "Genesis2"
+		},
+		{
+			"ClassName": "MissionMetaData_WhaleRescue_Beta_C",
+			"Description": "Star Dolphin (Beta)",
+			"Mod": "Genesis2"
+		},
+		{
+			"ClassName": "MissionMetaType_FinalBattle_Beta_C",
+			"Description": "Terminus (Beta)",
+			"Mod": "Genesis2"
+		},
+		{
+			"ClassName": "MissionType_Hunt_LionFishLion_Beta_C",
+			"Description": "Shadowmane Prowl (Beta)",
+			"Mod": "Genesis2"
+		},
+		{
+			"ClassName": "MissionType_Hunt_Shapeshifter_Beta_C",
+			"Description": "Ferox Cull (Beta)",
+			"Mod": "Genesis2"
+		},
+		{
+			"ClassName": "MissionType_Hunt_Spindles_Beta_C",
+			"Description": "Velonasaur Stalk (Beta)",
+			"Mod": "Genesis2"
+		},
+		{
+			"ClassName": "MissionType_Hunt_Torpor_LanternPet_Beta_C",
+			"Description": "Bulbdog Fetch (Beta)",
+			"Mod": "Genesis2"
+		},
+		{
+			"ClassName": "MissionType_Hunt_Torpor_MilkGlider_Beta_C",
+			"Description": "Maewing Poach (Beta)",
+			"Mod": "Genesis2"
+		},
+		{
+			"ClassName": "MissionType_Hunt_Torpor_Paracer_Beta_C",
+			"Description": "Paracer Roundup (Beta)",
+			"Mod": "Genesis2"
+		},
+		{
+			"ClassName": "MissionType_Race2_Canoe_Beta_C",
+			"Description": "Downriver Run (Beta)",
+			"Mod": "Genesis2"
+		},
+		{
+			"ClassName": "MissionType_Race2_Canoe_Team_Beta_C",
+			"Description": "Team Downriver Run (Beta)",
+			"Mod": "Genesis2"
+		},
+		{
+			"ClassName": "MissionType_Race2_Enforcer_Beta_C",
+			"Description": "Circuit Chase (Beta)",
+			"Mod": "Genesis2"
+		},
+		{
+			"ClassName": "MissionType_Race2_HoverSail_Beta_C",
+			"Description": "Slipstream Sweep (Beta)",
+			"Mod": "Genesis2"
+		},
+		{
+			"ClassName": "MissionType_Race2_MilkGlider_Beta_C",
+			"Description": "Slide and Glide (Beta)",
+			"Mod": "Genesis2"
+		},
+		{
+			"ClassName": "MissionType_Race2_SpaceDolphin_Beta_C",
+			"Description": "Starwing Strike (Beta)",
+			"Mod": "Genesis2"
+		},
+		{
+			"ClassName": "MissionMetaData_ExpG_Alpha_C",
+			"Description": "Code Red (Alpha)",
+			"Mod": "Genesis2"
+		},
+		{
+			"ClassName": "MissionMetaData_LifeSupport_Alpha_C",
+			"Description": "Life Support (Alpha)",
+			"Mod": "Genesis2"
+		},
+		{
+			"ClassName": "MissionMetaData_Maze_Alpha_C",
+			"Description": "Choose Your Own Adventure (Alpha)",
+			"Mod": "Genesis2"
+		},
+		{
+			"ClassName": "MissionMetaData_STAGauntlet_Alpha_C",
+			"Description": "Survive the ARK (Alpha)",
+			"Mod": "Genesis2"
+		},
+		{
+			"ClassName": "MissionMetaData_WhaleRescue_Alpha_C",
+			"Description": "Star Dolphin (Alpha)",
+			"Mod": "Genesis2"
+		},
+		{
+			"ClassName": "MissionMetaType_FinalBattle_Alpha_C",
+			"Description": "Terminus (Alpha)",
+			"Mod": "Genesis2"
+		},
+		{
+			"ClassName": "MissionType_Hunt_LionFishLion_Alpha_C",
+			"Description": "Shadowmane Prowl (Alpha)",
+			"Mod": "Genesis2"
+		},
+		{
+			"ClassName": "MissionType_Hunt_Shapeshifter_Alpha_C",
+			"Description": "Ferox Cull (Alpha)",
+			"Mod": "Genesis2"
+		},
+		{
+			"ClassName": "MissionType_Hunt_Spindles_Alpha_C",
+			"Description": "Velonasaur Stalk (Alpha)",
+			"Mod": "Genesis2"
+		},
+		{
+			"ClassName": "MissionType_Hunt_Torpor_LanternPet_Alpha_C",
+			"Description": "Bulbdog Fetch (Alpha)",
+			"Mod": "Genesis2"
+		},
+		{
+			"ClassName": "MissionType_Hunt_Torpor_MilkGlider_Alpha_C",
+			"Description": "Maewing Poach (Alpha)",
+			"Mod": "Genesis2"
+		},
+		{
+			"ClassName": "MissionType_Hunt_Torpor_Paracer_Alpha_C",
+			"Description": "Paracer Roundup (Alpha)",
+			"Mod": "Genesis2"
+		},
+		{
+			"ClassName": "MissionType_Race2_Canoe_Alpha_C",
+			"Description": "Downriver Run (Alpha)",
+			"Mod": "Genesis2"
+		},
+		{
+			"ClassName": "MissionType_Race2_Canoe_Team_Alpha_C",
+			"Description": "Team Downriver Run (Alpha)",
+			"Mod": "Genesis2"
+		},
+		{
+			"ClassName": "MissionType_Race2_Enforcer_Alpha_C",
+			"Description": "Circuit Chase (Alpha)",
+			"Mod": "Genesis2"
+		},
+		{
+			"ClassName": "MissionType_Race2_HoverSail_Alpha_C",
+			"Description": "Slipstream Sweep (Alpha)",
+			"Mod": "Genesis2"
+		},
+		{
+			"ClassName": "MissionType_Race2_MilkGlider_Alpha_C",
+			"Description": "Slide and Glide (Alpha)",
+			"Mod": "Genesis2"
+		},
+		{
+			"ClassName": "MissionType_Race2_SpaceDolphin_Alpha_C",
+			"Description": "Starwing Strike (Alpha)",
 			"Mod": "Genesis2"
 		}
 	],

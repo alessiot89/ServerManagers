@@ -2582,6 +2582,12 @@ Undocumented bye wildcard.</sys:String>
     <sys:String x:Key="ServerSettings_SupplyCrate_ItemSetEntry_ChanceToBeBlueprintOverrideColumnLabel">Blueprint Chance</sys:String>
     <sys:String x:Key="ServerSettings_SupplyCrate_ItemSetEntry_ChanceToBeBlueprintOverrideColumnTooltip">Specifies the chance you will generate a blueprint instead of the item. Force Blueprint must be disabled.</sys:String>
 
+    <sys:String x:Key="ServerSettings_SupplyCrate_ItemSetEntry_ForcePreventGrindingColumnLabel">Force Prevent Grinding</sys:String>
+    <sys:String x:Key="ServerSettings_SupplyCrate_ItemSetEntry_ForcePreventGrindingColumnTooltip">If enabled, you will always generate non-grindable items.</sys:String>
+    
+    <sys:String x:Key="ServerSettings_SupplyCrate_ItemSetEntry_ItemStatClampsMultiplierColumnLabel">Clamp Multiplier</sys:String>
+    <sys:String x:Key="ServerSettings_SupplyCrate_ItemSetEntry_ItemStatClampsMultiplierColumnTooltip">Specifies how much the items can differ from clamps values.</sys:String>
+
     <sys:String x:Key="ServerSettings_SupplyCrate_Item_ItemClassStringColumnLabel">Item</sys:String>
     <sys:String x:Key="ServerSettings_SupplyCrate_Item_ItemClassStringColumnTooltip">Item class string of the item.</sys:String>
     <sys:String x:Key="ServerSettings_SupplyCrate_Item_ItemWeightColumnLabel">Weight</sys:String>
