@@ -2303,33 +2303,23 @@
 			"Mod": "Genesis2"
 		},
 		{
-			"ClassName": "MissionMetaData_ExpG_Gamma_C",
+			"ClassName": "MissionType_ModularMission_ExperimentG_Gamma_C",
 			"Description": "Code Red (Gamma)",
 			"Mod": "Genesis2"
 		},
 		{
-			"ClassName": "MissionMetaData_LifeSupport_Gamma_C",
+			"ClassName": "MissionType_ModularMission_LifeSupport_Gamma_C",
 			"Description": "Life Support (Gamma)",
 			"Mod": "Genesis2"
 		},
 		{
-			"ClassName": "MissionMetaData_Maze_Gamma_C",
+			"ClassName": "MissionType_Maze_CorruptedZone_Gamma_C",
 			"Description": "Choose Your Own Adventure (Gamma)",
 			"Mod": "Genesis2"
 		},
 		{
-			"ClassName": "MissionMetaData_STAGauntlet_Gamma_C",
-			"Description": "Survive the ARK (Gamma)",
-			"Mod": "Genesis2"
-		},
-		{
-			"ClassName": "MissionMetaData_WhaleRescue_Gamma_C",
+			"ClassName": "MissionType_WhaleRescue_Gamma_C",
 			"Description": "Star Dolphin (Gamma)",
-			"Mod": "Genesis2"
-		},
-		{
-			"ClassName": "MissionMetaType_FinalBattle_Gamma_C",
-			"Description": "Terminus (Gamma)",
 			"Mod": "Genesis2"
 		},
 		{
@@ -2393,33 +2383,23 @@
 			"Mod": "Genesis2"
 		},
 		{
-			"ClassName": "MissionMetaData_ExpG_Beta_C",
+			"ClassName": "MissionType_ModularMission_ExperimentG_Beta_C",
 			"Description": "Code Red (Beta)",
 			"Mod": "Genesis2"
 		},
 		{
-			"ClassName": "MissionMetaData_LifeSupport_Beta_C",
+			"ClassName": "MissionType_ModularMission_LifeSupport_Beta_C",
 			"Description": "Life Support (Beta)",
 			"Mod": "Genesis2"
 		},
 		{
-			"ClassName": "MissionMetaData_Maze_Beta_C",
+			"ClassName": "MissionType_Maze_CorruptedZone_Beta_C",
 			"Description": "Choose Your Own Adventure (Beta)",
 			"Mod": "Genesis2"
 		},
 		{
-			"ClassName": "MissionMetaData_STAGauntlet_Beta_C",
-			"Description": "Survive the ARK (Beta)",
-			"Mod": "Genesis2"
-		},
-		{
-			"ClassName": "MissionMetaData_WhaleRescue_Beta_C",
+			"ClassName": "MissionType_WhaleRescue_Beta_C",
 			"Description": "Star Dolphin (Beta)",
-			"Mod": "Genesis2"
-		},
-		{
-			"ClassName": "MissionMetaType_FinalBattle_Beta_C",
-			"Description": "Terminus (Beta)",
 			"Mod": "Genesis2"
 		},
 		{
@@ -2483,33 +2463,23 @@
 			"Mod": "Genesis2"
 		},
 		{
-			"ClassName": "MissionMetaData_ExpG_Alpha_C",
+			"ClassName": "MissionType_ModularMission_ExperimentG_Alpha_C",
 			"Description": "Code Red (Alpha)",
 			"Mod": "Genesis2"
 		},
 		{
-			"ClassName": "MissionMetaData_LifeSupport_Alpha_C",
+			"ClassName": "MissionType_ModularMission_LifeSupport_Alpha_C",
 			"Description": "Life Support (Alpha)",
 			"Mod": "Genesis2"
 		},
 		{
-			"ClassName": "MissionMetaData_Maze_Alpha_C",
+			"ClassName": "MissionType_Maze_CorruptedZone_Alpha_C",
 			"Description": "Choose Your Own Adventure (Alpha)",
 			"Mod": "Genesis2"
 		},
 		{
-			"ClassName": "MissionMetaData_STAGauntlet_Alpha_C",
-			"Description": "Survive the ARK (Alpha)",
-			"Mod": "Genesis2"
-		},
-		{
-			"ClassName": "MissionMetaData_WhaleRescue_Alpha_C",
+			"ClassName": "MissionType_WhaleRescue_Alpha_C",
 			"Description": "Star Dolphin (Alpha)",
-			"Mod": "Genesis2"
-		},
-		{
-			"ClassName": "MissionMetaType_FinalBattle_Alpha_C",
-			"Description": "Terminus (Alpha)",
 			"Mod": "Genesis2"
 		},
 		{
