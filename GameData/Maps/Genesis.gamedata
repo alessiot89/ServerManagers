@@ -625,6 +625,13 @@
 			"ClassName": "PrimalItem_WeaponFishingNet_C",
 			"Description": "Fish Net",
 			"Mod": "Genesis"
+		},
+		{
+			"Category": "Tools",
+			"IsHarvestable": false,
+			"ClassName": "PrimalItem_WeaponElectronicBinoculars_C",
+			"Description": "Electronic Binoculars",
+			"Mod": "Genesis"
 		}
 	],
 	"MapSpawners": [

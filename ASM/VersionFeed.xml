@@ -5,7 +5,30 @@
   <title>Ark Server Manager Version Feed</title>
   <subtitle>This is the Ark Server Manager release version feed.</subtitle>
   <link href="https://arkservermanager.freeforums.net/" />
-  <updated>2024-03-24T23:00:00Z</updated>
+  <updated>2024-04-12T16:00:00Z</updated>
+
+    <entry>
+        <id>urn:226a2da1-ea1b-4b4f-a41c-5e618a3086ca</id>
+        <title>2.1.449 (2.1.449.1)</title>
+        <summary>2.1.449.1</summary>
+        <link href="" />
+        <updated>2024-04-12T16:00:00Z</updated>
+        <content type="xhtml">
+            <div xmlns="http://www.w3.org/1999/xhtml" style="font-family: Arial, Verdana, Helvetica, Sans-Serif;font-size: .8em;">
+                <p>
+                    <u style="font-size: .9em;">CHANGE</u>
+                    <br/>
+                    <ul>
+                        <li>Updated gamedata files.</li>
+                    </ul>
+                </p>
+            </div>
+        </content>
+        <author>
+            <name>Alessio</name>
+            <email></email>
+        </author>
+    </entry>
 
     <entry>
         <id>urn:0f0a074b-65ce-4c50-aecc-fdfe61fc4a8f</id>

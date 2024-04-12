@@ -5,36 +5,21 @@
   <title>Ark Server Manager Version Feed</title>
   <subtitle>This is the Ark Server Manager beta version feed.</subtitle>
   <link href="https://arkservermanager.freeforums.net/" />
-    <updated>2024-03-24T23:00:00Z</updated>
+  <updated>2024-04-12T16:00:00Z</updated>
 
     <entry>
-        <id>urn:0f0a074b-65ce-4c50-aecc-fdfe61fc4a8f</id>
-        <title>2.1.448 (2.1.448.3)</title>
-        <summary>2.1.448.3</summary>
+        <id>urn:226a2da1-ea1b-4b4f-a41c-5e618a3086ca</id>
+        <title>2.1.449 (2.1.449.1)</title>
+        <summary>2.1.449.1</summary>
         <link href="" />
-        <updated>2024-03-24T00:00:00Z</updated>
+        <updated>2024-04-12T16:00:00Z</updated>
         <content type="xhtml">
             <div xmlns="http://www.w3.org/1999/xhtml" style="font-family: Arial, Verdana, Helvetica, Sans-Serif;font-size: .8em;">
                 <p>
-                    <u style="font-size: .9em;">NEW</u>
-                    <br/>
-                    <ul>
-                        <li>Supply Crate Overrides - added force prevent grinding and clamp multiplier settings</li>
-                    </ul>
                     <u style="font-size: .9em;">CHANGE</u>
                     <br/>
                     <ul>
                         <li>Updated gamedata files.</li>
-                    </ul>
-                    <u style="font-size: .9em;">BUGFIX</u>
-                    <br/>
-                    <ul>
-                        <li>Can type floating point in create overrides where needed.</li>
-                    </ul>
-                    <ul>
-                        <li>Wrong mission name fixes</li>
-                        <li>Removed bugged mission names</li>
-                        <li>Added Rhyniognatha Saddle to gamedata</li>
                     </ul>
                 </p>
             </div>
