@@ -2318,7 +2318,7 @@
 			"Mod": "Genesis2"
 		},
 		{
-			"ClassName": "MissionType_WhaleRescue_Gamma_C",
+			"ClassName": "MissionType_WhaleRescue_C",
 			"Description": "Star Dolphin (Gamma)",
 			"Mod": "Genesis2"
 		},
