@@ -1667,5 +1667,13 @@
 			"Description": "Who Hid the Squid? (Gamma)",
 			"Mod": "Genesis"
 		}
+	],
+	"GameMaps": [
+		{
+			"IsSotF": false,
+			"ClassName": "Genesis",
+			"Description": "Genesis: Part 1",
+			"Mod": "Genesis"
+		}
 	]
 }
