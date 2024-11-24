@@ -5,21 +5,21 @@
   <title>Ark Server Manager Version Feed</title>
   <subtitle>This is the Ark Server Manager beta version feed.</subtitle>
   <link href="https://arkservermanager.freeforums.net/" />
-    <updated>2024-04-14T16:00:00Z</updated>
+    <updated>2024-11-24T15:45:00Z</updated>
 
     <entry>
-        <id>urn:406415d0-b3f5-422c-8ffa-0d511cc29304</id>
-        <title>2.1.449 (2.1.449.2)</title>
-        <summary>2.1.449.2</summary>
+        <id>urn:2af92e8c-3f25-475c-b7e3-ff58f20458a9</id>
+        <title>2.1.450 (2.1.450.0)</title>
+        <summary>2.1.450.0</summary>
         <link href="" />
-        <updated>2024-04-12T16:00:00Z</updated>
+        <updated>2024-11-24T15:45:00Z</updated>
         <content type="xhtml">
             <div xmlns="http://www.w3.org/1999/xhtml" style="font-family: Arial, Verdana, Helvetica, Sans-Serif;font-size: .8em;">
                 <p>
-                    <u style="font-size: .9em;">CHANGE</u>
+                    <u style="font-size: .9em;">BUGFIX</u>
                     <br/>
                     <ul>
-                        <li>Updated gamedata files.</li>
+                        <li>Genesis: Part 1 gamedata fixes (now listed again in map list).</li>
                     </ul>
                 </p>
             </div>
